@@ -9,12 +9,10 @@ import shutil
 import math
 
 class Ccodec():
-    def __init__(self, src_path, dst_path, log_path):
+    def __init__(self, src_path, log_path):
         self._src_path = src_path
-        self._dst_path = dst_path
-        
         self._log_fd = open(log_path, "a")
-
+        self._ffprobe_tools = "../../bin/ffprobe"
         self._src_info = self.ffprobe(src_path)
     
     def write_log(self, msg):
@@ -27,11 +25,15 @@ class Ccodec():
         end_time = datetime.datetime.now()
         passed_time = end_time - start_time
         passed_time_us = passed_time.seconds * 1000000 + passed_time.microseconds
-        return {"retcode" : retcode, "spend_time_us": passed_time_us}
+
+        return {
+                    "retcode" : retcode, 
+                    "spend_time_us": passed_time_us
+            }
 
     def ffprobe(self, video_path):
         self._ffprobe_log = video_path + ".ffprobe"
-        self._ffprobe_cmd = "./ffprobe -i " + video_path + " -show_streams -select_streams v -print_format json "
+        self._ffprobe_cmd = self._ffprobe_tools + " -i " + video_path + " -show_streams -select_streams v -print_format json "
         self._ffprobe_cmd += " >" + self._ffprobe_log + " 2>/dev/null"
 
         self.run_cmd(self._ffprobe_cmd)
@@ -53,8 +55,9 @@ class Ccodec():
                     videoinfo["height"] = ffprobe_data["streams"][0]["width"]
 
         ffprobe_fd.close()
+        os.remove(self._ffprobe_log)
         return videoinfo
         
 if __name__ == "__main__":
-    obj = Ccodec("/data/eckoqzhang/video/t265/seqs/tjg_746285709_1047_bc809c56307d4ee19964b7aab922vide.f0.mp4", "/data/eckoqzhang/video/t265/trans/tjg_746285709_1047_bc809c56307d4ee19964b7aab922vide.t265.mp4", "result.log")
+    obj = Ccodec("/data/eckoqzhang/video/t265/seqs/tjg_746285709_1047_bc809c56307d4ee19964b7aab922vide.f0.mp4", "result.log")
     print obj.ffprobe("/data/eckoqzhang/video/t265/seqs/tjg_746285709_1047_bc809c56307d4ee19964b7aab922vide.f0.mp4")
