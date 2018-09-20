@@ -12,8 +12,8 @@ from codec import Ccodec
 class Cx265(Ccodec):
     def __init__(self, src_path, dst_path, log_path, frame_rate, frame_sync, crf, is_twopass):
         Ccodec.__init__(self, src_path, log_path)
-        self._psnr_tools = "../../bin/psnr_yuv611"
-        self._ffmpeg_tools = "../../bin/ffmpeg"
+        self._psnr_tools = "/data/eckoqzhang/workspace/Tecko/bin/psnr_yuv611"
+        self._ffmpeg_tools = "/data/eckoqzhang/workspace/Tecko/bin/ffmpeg"
         self._dst_path = dst_path
         self._frame_rate = frame_rate
         self._frame_sync = frame_sync

@@ -12,7 +12,7 @@ class Ccodec():
     def __init__(self, src_path, log_path):
         self._src_path = src_path
         self._log_fd = open(log_path, "a")
-        self._ffprobe_tools = "../../bin/ffprobe"
+        self._ffprobe_tools = "/data/eckoqzhang/workspace/Tecko/bin/ffprobe"
         self._src_info = self.ffprobe(src_path)
     
     def write_log(self, msg):
@@ -35,7 +35,9 @@ class Ccodec():
         self._ffprobe_log = video_path + ".ffprobe"
         self._ffprobe_cmd = self._ffprobe_tools + " -i " + video_path + " -show_streams -select_streams v -print_format json "
         self._ffprobe_cmd += " >" + self._ffprobe_log + " 2>/dev/null"
-
+        
+        print self._ffprobe_cmd
+        print os.getcwd()
         self.run_cmd(self._ffprobe_cmd)
 
         ffprobe_fd = open(self._ffprobe_log, "r")
