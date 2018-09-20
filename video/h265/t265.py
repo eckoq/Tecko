@@ -10,11 +10,14 @@ import math
 from codec import Ccodec
 
 class Ct265(Ccodec):
-    def __init__(self, src_path, dst_path, log_path):
+    def __init__(self, src_path, dst_path, log_path, frame_rate, frame_sync, crf):
         Ccodec.__init__(self, src_path, log_path)
         self._psnr_tools = "../../bin/psnr_yuv611"
         self._ffmpeg_tools = "../../bin/ffmpeg_t265"
         self._dst_path = dst_path
+        self._frame_rate = frame_rate
+        self._frame_sync = frame_sync
+        self._crf = crf
     
     def psnr(self):
         src_path = self._src_path
@@ -50,7 +53,8 @@ class Ct265(Ccodec):
     def decode(self, flag, src_path, dst_path):
         self._decode_cmd = self._ffmpeg_tools + " -i "  + src_path + " -vsync 0 -an -y " + dst_path + " 2> /dev/null"
         if flag == 1:
-            self._decode_cmd = self._ffmpeg_tools + " -noautorotate -i "  + src_path + " -s " + str(self._trans_info["width"]) + "x" + str(self._trans_info["height"]) + " -vsync cfr -r 30 -an  -pix_fmt yuv420p -y " + dst_path + " 2> /dev/null"
+            self._decode_cmd = self._ffmpeg_tools + " -noautorotate -i "  + src_path + " -s " + str(self._trans_info["width"]) + "x" + str(self._trans_info["height"]) 
+            self._decode_cmd += " -vsync " + str(self._frame_sync) + " -r " + str(self._frame_rate) + " -an -pix_fmt yuv420p -y " + dst_path + " 2> /dev/null"
         
         print self._decode_cmd
         self.run_cmd(self._decode_cmd) 
@@ -62,10 +66,10 @@ class Ct265(Ccodec):
         height = self._src_info["height"]
 
         self._t265_cmd = self._ffmpeg_tools + " -threads 3 -noautorotate  -max_error_rate 0.99 -fflags +genpts  -y -loglevel error "
-        self._t265_cmd += " -i " + src_path + " -r 30 -vsync cfr "
+        self._t265_cmd += " -i " + src_path + " -r " + str(self._frame_rate) + " -vsync " + str(self._frame_sync)
         self._t265_cmd += " -filter_complex \"[0]scale=w=" + str(width) + ":h=" + str(height) + "[scale_1_out]\" "
         self._t265_cmd += " -map [scale_1_out]:v? -map 0:a? "
-        self._t265_cmd += " -pix_fmt  yuv420p  -vcodec libt265  -t265-params crf=23.5:preset=0:vbv-maxrate=4000:vbv-bufsize=8000 -acodec copy "
+        self._t265_cmd += " -pix_fmt  yuv420p  -vcodec libt265  -t265-params crf=" + str(self._crf) + ":preset=0:vbv-maxrate=4000:vbv-bufsize=8000 -acodec copy "
         self._t265_cmd += " -bsf:a aac_adtstoasc  -f mp4 -movflags +faststart -threads 6 " + dst_path 
         
         print self._t265_cmd
@@ -75,10 +79,8 @@ class Ct265(Ccodec):
         self._trans_info = self.ffprobe(dst_path)
         self._trans_info["trans_fps"] = int(self._trans_info["frames"]) * 1000000.0 / spend_time_us
     
-    def x265_encode(self):
-        pass
 
 if __name__ == "__main__":
-    obj = Ct265("/data/eckoqzhang/video/t265/seqs/tjg_746285709_1047_bc809c56307d4ee19964b7aab922vide.f0.mp4", "/data/eckoqzhang/workspace/Tecko/video/h265/tjg_746285709_1047_bc809c56307d4ee19964b7aab922vide.t265.mp4", "result.log")
+    obj = Ct265("/data/eckoqzhang/video/t265/seqs/tjg_746285709_1047_bc809c56307d4ee19964b7aab922vide.f0.mp4", "/data/eckoqzhang/workspace/Tecko/video/h265/tjg_746285709_1047_bc809c56307d4ee19964b7aab922vide.t265.mp4", "result.log", "30", "0", "23.5")
     obj.t265_encode()
     print obj.psnr()
