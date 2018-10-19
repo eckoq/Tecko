@@ -30,7 +30,11 @@ if __name__ == "__main__":
     out_fd = open(sys.argv[2], "w")
     all_lines = fd.readlines()
     for line in all_lines:
-        line = line.strip()
+        line = line.strip().split()[1]
         retmsg = http_get("9.25.161.90", "/api/getVidViaFeedid", "feedid=%s" %(line))
-        if retmsg["errno"] == 0:
-            out_fd.write("%s\t%s\n" %(line, retmsg["payload"]["vid_list"][0]))
+        try:
+            if retmsg["errno"] == 0:
+                print line, retmsg["payload"]["vid_list"][0]
+                out_fd.write("%s\t%s\n" %(line, retmsg["payload"]["vid_list"][0]))
+        except:
+            print "%s\t error" %(line)

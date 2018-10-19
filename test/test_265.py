@@ -17,22 +17,22 @@ def run(file_name):
     all_line = fd.readlines()
 
     #t265
-    for line in all_line:
-        vid = line.strip()       
-        src_path = src_dir + vid + ".f0.mp4"
-        
-        dst_path = dst_dir + vid + ".t265.mp4"
-        result_file = "./t265.result"
-        print src_path, dst_path, result_file
-        obj = Ct265(src_path, dst_path, result_file, "60", "vfr", "23.5")
-        obj.t265_encode()
-        obj.psnr()
+    #for line in all_line:
+    #    vid = line.strip()       
+    #    src_path = src_dir + vid + ".f0.mp4"
+    #    
+    #    dst_path = dst_dir + vid + ".t265.mp4"
+    #    result_file = "./t265.result"
+    #    print src_path, dst_path, result_file
+    #    obj = Ct265(src_path, dst_path, result_file, "60", "vfr", "23.5")
+    #    obj.t265_encode()
+    #    obj.psnr()
 
     #x265
     crfs = [
-            20,
-            21,
-            22,
+            #20,
+            #21,
+            #22,
             22.5,
             23,
             23.5,
@@ -50,7 +50,7 @@ def run(file_name):
             
             print src_path, dst_path, result_file
 
-            obj = Cx265(src_path, dst_path, result_file, "30", "cfr", str(crf))
+            obj = Cx265(src_path, dst_path, result_file, "30", "cfr", str(crf), 0)
             obj.x265_encode()
             obj.psnr()
 
