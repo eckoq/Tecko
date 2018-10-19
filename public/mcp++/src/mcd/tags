@@ -1,0 +1,579 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+BC_DISK_HANDLER	tfc_diskcache_chunk_alloc.h	/^	typedef int BC_DISK_HANDLER;$/;"	t	namespace:tfc::diskcache
+BC_MEM_HANDLER	tfc_cache_chunk_alloc.h	/^	typedef int BC_MEM_HANDLER;$/;"	t	namespace:tfc::cache
+BIN	makefile	/^BIN     := mcd test_app.so http_app.so http_app_fwd.so$/;"	m
+BIT_FLAG_CLEAR	tfc_cache_bit_map.h	/^    	BIT_FLAG_CLEAR = 0x00,$/;"	e	enum:tfc::cache::tagEBitFlag
+BIT_FLAG_SET	tfc_cache_bit_map.h	/^    	BIT_FLAG_SET = 0x01	$/;"	e	enum:tfc::cache::tagEBitFlag
+CBinLog	tfc_binlog.cpp	/^CBinLog::CBinLog()$/;"	f	class:CBinLog
+CBinLog	tfc_binlog.hpp	/^class CBinLog$/;"	c
+CBitMap	tfc_cache_bit_map.h	/^        CBitMap():_pool(NULL), _pool_size(0), _set_count(0){};$/;"	f	class:tfc::cache::CBitMap
+CBitMap	tfc_cache_bit_map.h	/^    class CBitMap$/;"	c	namespace:tfc::cache
+CChunkAllocator	tfc_cache_chunk_alloc.h	/^	class CChunkAllocator $/;"	c	namespace:tfc::cache
+CDiskChunkAllocator	tfc_diskcache_chunk_alloc.h	/^		CDiskChunkAllocator():data_fd_(0){};$/;"	f	class:tfc::diskcache::CDiskChunkAllocator
+CDiskChunkAllocator	tfc_diskcache_chunk_alloc.h	/^	class CDiskChunkAllocator $/;"	c	namespace:tfc::diskcache
+CFLAGS	makefile	/^CFLAGS = -g -Wall -D_NO_SYNC_ -fPIC$/;"	m
+CHUNK_ALLOCATOR_ERROR	tfc_cache_chunk_alloc.h	/^		enum CHUNK_ALLOCATOR_ERROR$/;"	g	class:tfc::cache::CChunkAllocator
+CHUNK_ALLOCATOR_ERROR	tfc_diskcache_chunk_alloc.h	/^		enum CHUNK_ALLOCATOR_ERROR$/;"	g	class:tfc::diskcache::CDiskChunkAllocator
+CHUNK_ALLOCATOR_ERROR_BASE	tfc_cache_chunk_alloc.h	/^			CHUNK_ALLOCATOR_ERROR_BASE = -1,    $/;"	e	enum:tfc::cache::CChunkAllocator::CHUNK_ALLOCATOR_ERROR
+CHUNK_ALLOCATOR_ERROR_BASE	tfc_diskcache_chunk_alloc.h	/^			CHUNK_ALLOCATOR_ERROR_BASE = -1,    $/;"	e	enum:tfc::diskcache::CDiskChunkAllocator::CHUNK_ALLOCATOR_ERROR
+CHUNK_ALLOCATOR_ERROR_DATA_VERIFY_FAIL	tfc_cache_chunk_alloc.h	/^				CHUNK_ALLOCATOR_ERROR_DATA_VERIFY_FAIL = CHUNK_ALLOCATOR_ERROR_BASE -3,    \/\/内存数据检查失败$/;"	e	enum:tfc::cache::CChunkAllocator::CHUNK_ALLOCATOR_ERROR
+CHUNK_ALLOCATOR_ERROR_DATA_VERIFY_FAIL	tfc_diskcache_chunk_alloc.h	/^				CHUNK_ALLOCATOR_ERROR_DATA_VERIFY_FAIL = CHUNK_ALLOCATOR_ERROR_BASE -3,    \/\/内存数据检查失败$/;"	e	enum:tfc::diskcache::CDiskChunkAllocator::CHUNK_ALLOCATOR_ERROR
+CHUNK_ALLOCATOR_ERROR_FREE_CHUNK_LACK	tfc_cache_chunk_alloc.h	/^				CHUNK_ALLOCATOR_ERROR_FREE_CHUNK_LACK = CHUNK_ALLOCATOR_ERROR_BASE -2,    \/\/空闲内存块不足$/;"	e	enum:tfc::cache::CChunkAllocator::CHUNK_ALLOCATOR_ERROR
+CHUNK_ALLOCATOR_ERROR_FREE_CHUNK_LACK	tfc_diskcache_chunk_alloc.h	/^				CHUNK_ALLOCATOR_ERROR_FREE_CHUNK_LACK = CHUNK_ALLOCATOR_ERROR_BASE -2,    \/\/空闲内存块不足$/;"	e	enum:tfc::diskcache::CDiskChunkAllocator::CHUNK_ALLOCATOR_ERROR
+CHUNK_ALLOCATOR_ERROR_INVALID_PARAM	tfc_cache_chunk_alloc.h	/^				CHUNK_ALLOCATOR_ERROR_INVALID_PARAM = CHUNK_ALLOCATOR_ERROR_BASE -1,    \/\/非法参数$/;"	e	enum:tfc::cache::CChunkAllocator::CHUNK_ALLOCATOR_ERROR
+CHUNK_ALLOCATOR_ERROR_INVALID_PARAM	tfc_diskcache_chunk_alloc.h	/^				CHUNK_ALLOCATOR_ERROR_INVALID_PARAM = CHUNK_ALLOCATOR_ERROR_BASE -1,    \/\/非法参数$/;"	e	enum:tfc::diskcache::CDiskChunkAllocator::CHUNK_ALLOCATOR_ERROR
+CHUNK_ALLOCATOR_ERROR_OPEN_FILE	tfc_diskcache_chunk_alloc.h	/^				CHUNK_ALLOCATOR_ERROR_OPEN_FILE = CHUNK_ALLOCATOR_ERROR_BASE -6			\/\/打开文件失败$/;"	e	enum:tfc::diskcache::CDiskChunkAllocator::CHUNK_ALLOCATOR_ERROR
+CHUNK_ALLOCATOR_ERROR_READ_DISK	tfc_diskcache_chunk_alloc.h	/^				CHUNK_ALLOCATOR_ERROR_READ_DISK = CHUNK_ALLOCATOR_ERROR_BASE -4,		\/\/读磁盘失败$/;"	e	enum:tfc::diskcache::CDiskChunkAllocator::CHUNK_ALLOCATOR_ERROR
+CHUNK_ALLOCATOR_ERROR_WRITE_DISK	tfc_diskcache_chunk_alloc.h	/^				CHUNK_ALLOCATOR_ERROR_WRITE_DISK = CHUNK_ALLOCATOR_ERROR_BASE -5,	\/\/写磁盘失败$/;"	e	enum:tfc::diskcache::CDiskChunkAllocator::CHUNK_ALLOCATOR_ERROR
+CHashMap	tfc_cache_hash_map.cpp	/^CHashMap::CHashMap()$/;"	f	class:CHashMap
+CHashMap	tfc_cache_hash_map.h	/^	class CHashMap$/;"	c	namespace:tfc::cache
+CHashMap	tfc_diskcache_hash_map.cpp	/^CHashMap::CHashMap()$/;"	f	class:CHashMap
+CHashMap	tfc_diskcache_hash_map.h	/^	class CHashMap$/;"	c	namespace:tfc::diskcache
+CHttpApp	http_app.cpp	/^	CHttpApp(){}$/;"	f	class:CHttpApp
+CHttpApp	http_app.cpp	/^class CHttpApp : public CacheProc$/;"	c	file:
+CHttpApp	http_app_fwd.cpp	/^	CHttpApp(){}$/;"	f	class:CHttpApp
+CHttpApp	http_app_fwd.cpp	/^class CHttpApp : public CacheProc$/;"	c	file:
+CTestApp	test_app.cpp	/^	CTestApp(){}$/;"	f	class:CTestApp
+CTestApp	test_app.cpp	/^class CTestApp : public CacheProc$/;"	c	file:
+C_DATA_LEN	tfc_cache_hash_map.h	/^		static const unsigned C_DATA_LEN = 16;$/;"	m	struct:tfc::cache::tagTMBHashKey
+C_DATA_LEN	tfc_diskcache_hash_map.h	/^		static const unsigned C_DATA_LEN = 16;$/;"	m	struct:tfc::diskcache::tagTMBHashKey
+CacheAccess	tfc_cache_access.h	/^		CacheAccess()$/;"	f	class:tfc::cache::CacheAccess
+CacheAccess	tfc_cache_access.h	/^	class CacheAccess$/;"	c	namespace:tfc::cache
+CacheAccess	tfc_diskcache_access.h	/^		CacheAccess()$/;"	f	class:tfc::diskcache::CacheAccess
+CacheAccess	tfc_diskcache_access.h	/^	class CacheAccess$/;"	c	namespace:tfc::diskcache
+CacheAccessUin	tfc_cache_access.h	/^		CacheAccessUin(CacheAccess& da) : _da(da){}$/;"	f	class:tfc::cache::CacheAccessUin
+CacheAccessUin	tfc_cache_access.h	/^	class CacheAccessUin$/;"	c	namespace:tfc::cache
+CacheAccessUin	tfc_diskcache_access.h	/^		CacheAccessUin(CacheAccess& da) : _da(da){}$/;"	f	class:tfc::diskcache::CacheAccessUin
+CacheAccessUin	tfc_diskcache_access.h	/^	class CacheAccessUin$/;"	c	namespace:tfc::diskcache
+CacheProc	tfc_cache_proc.h	/^		CacheProc(): _epfd(-1), _infonum(0){}$/;"	f	class:tfc::cache::CacheProc
+CacheProc	tfc_cache_proc.h	/^	class CacheProc$/;"	c	namespace:tfc::cache
+ClearAllBinLog	tfc_binlog.cpp	/^int CBinLog::ClearAllBinLog()$/;"	f	class:CBinLog
+CoreInit	tfc_cache_access.cpp	/^int CacheAccess::CoreInit(int coredump_min, unsigned coredump_point,$/;"	f	class:CacheAccess
+CoreInit	tfc_cache_access.cpp	/^int CacheAccessUin::CoreInit(int coredump_min, unsigned coredump_point, char *coredump_file,$/;"	f	class:CacheAccessUin
+CoreInit	tfc_diskcache_access.cpp	/^int CacheAccess::CoreInit(int coredump_min, unsigned coredump_point,$/;"	f	class:CacheAccess
+CoreInit	tfc_diskcache_access.cpp	/^int CacheAccessUin::CoreInit(int coredump_min, unsigned coredump_point, char *coredump_file,$/;"	f	class:CacheAccessUin
+EBitFlag	tfc_cache_bit_map.h	/^    }EBitFlag;$/;"	t	namespace:tfc::cache
+ENodeFlag	tfc_cache_hash_map.h	/^	}ENodeFlag;$/;"	t	namespace:tfc::cache
+ENodeFlag	tfc_diskcache_hash_map.h	/^	}ENodeFlag;$/;"	t	namespace:tfc::diskcache
+HASH_MAP_ERROR	tfc_cache_hash_map.h	/^		enum HASH_MAP_ERROR$/;"	g	class:tfc::cache::CHashMap
+HASH_MAP_ERROR	tfc_diskcache_hash_map.h	/^		enum HASH_MAP_ERROR$/;"	g	class:tfc::diskcache::CHashMap
+HASH_MAP_ERROR_BASE	tfc_cache_hash_map.h	/^			HASH_MAP_ERROR_BASE = -1000,	$/;"	e	enum:tfc::cache::CHashMap::HASH_MAP_ERROR
+HASH_MAP_ERROR_BASE	tfc_diskcache_hash_map.h	/^			HASH_MAP_ERROR_BASE = -1000,	$/;"	e	enum:tfc::diskcache::CHashMap::HASH_MAP_ERROR
+HASH_MAP_ERROR_INVALID_PARAM	tfc_cache_hash_map.h	/^				HASH_MAP_ERROR_INVALID_PARAM = HASH_MAP_ERROR_BASE -1,	\/\/非法参数$/;"	e	enum:tfc::cache::CHashMap::HASH_MAP_ERROR
+HASH_MAP_ERROR_INVALID_PARAM	tfc_diskcache_hash_map.h	/^				HASH_MAP_ERROR_INVALID_PARAM = HASH_MAP_ERROR_BASE -1,	\/\/非法参数$/;"	e	enum:tfc::diskcache::CHashMap::HASH_MAP_ERROR
+HASH_MAP_ERROR_NODE_HAVE_EXIST	tfc_cache_hash_map.h	/^				HASH_MAP_ERROR_NODE_HAVE_EXIST = HASH_MAP_ERROR_BASE -3,	\/\/节点已经存在$/;"	e	enum:tfc::cache::CHashMap::HASH_MAP_ERROR
+HASH_MAP_ERROR_NODE_HAVE_EXIST	tfc_diskcache_hash_map.h	/^				HASH_MAP_ERROR_NODE_HAVE_EXIST = HASH_MAP_ERROR_BASE -3,	\/\/节点已经存在$/;"	e	enum:tfc::diskcache::CHashMap::HASH_MAP_ERROR
+HASH_MAP_ERROR_NODE_NOT_EXIST	tfc_cache_hash_map.h	/^				HASH_MAP_ERROR_NODE_NOT_EXIST = HASH_MAP_ERROR_BASE -2,	\/\/节点不存在$/;"	e	enum:tfc::cache::CHashMap::HASH_MAP_ERROR
+HASH_MAP_ERROR_NODE_NOT_EXIST	tfc_diskcache_hash_map.h	/^				HASH_MAP_ERROR_NODE_NOT_EXIST = HASH_MAP_ERROR_BASE -2,	\/\/节点不存在$/;"	e	enum:tfc::diskcache::CHashMap::HASH_MAP_ERROR
+HASH_MAP_ERROR_NO_FREE_NODE	tfc_cache_hash_map.h	/^				HASH_MAP_ERROR_NO_FREE_NODE = HASH_MAP_ERROR_BASE -4,	\/\/没有空闲节点$/;"	e	enum:tfc::cache::CHashMap::HASH_MAP_ERROR
+HASH_MAP_ERROR_NO_FREE_NODE	tfc_diskcache_hash_map.h	/^				HASH_MAP_ERROR_NO_FREE_NODE = HASH_MAP_ERROR_BASE -4,	\/\/没有空闲节点$/;"	e	enum:tfc::diskcache::CHashMap::HASH_MAP_ERROR
+INVALID_BC_DISK_HANDLER	tfc_diskcache_chunk_alloc.h	/^	const BC_DISK_HANDLER INVALID_BC_DISK_HANDLER = -1;$/;"	v
+INVALID_BC_MEM_HANDLER	tfc_cache_chunk_alloc.h	/^	const BC_MEM_HANDLER INVALID_BC_MEM_HANDLER = -1;$/;"	v
+Init	tfc_binlog.cpp	/^int CBinLog::Init(char *sPLogBaseName, long lPMaxLogSize, int iPMaxLogNum)$/;"	f	class:CBinLog
+MAX_BINLOG_ITEM_LEN	tfc_binlog.hpp	11;"	d
+MQInfo	tfc_cache_proc.h	/^	}MQInfo;$/;"	t	namespace:tfc::cache
+NODE_FLAG_DIRTY	tfc_cache_hash_map.h	/^		NODE_FLAG_DIRTY = 0x01,	$/;"	e	enum:tfc::cache::tagENodeFlag
+NODE_FLAG_DIRTY	tfc_diskcache_hash_map.h	/^              NODE_FLAG_DIRTY = 0x01,	$/;"	e	enum:tfc::diskcache::tagENodeFlag
+NODE_FLAG_UNCHG	tfc_cache_hash_map.h	/^		NODE_FLAG_UNCHG = 0x00,$/;"	e	enum:tfc::cache::tagENodeFlag
+NODE_FLAG_UNCHG	tfc_diskcache_hash_map.h	/^		NODE_FLAG_UNCHG = 0x00,$/;"	e	enum:tfc::diskcache::tagENodeFlag
+NULL	tfc_cache_chunk_alloc.h	16;"	d
+NULL	tfc_diskcache_chunk_alloc.h	16;"	d
+OBJ	makefile	/^OBJ	:= ..\/base\/tfc_base_config_file.o \\$/;"	m
+ReadRecordFromBinLog	tfc_binlog.cpp	/^int CBinLog::ReadRecordFromBinLog(char* buff, int maxsize)$/;"	f	class:CBinLog
+SetReadRecordStartTime	tfc_binlog.cpp	/^int CBinLog::SetReadRecordStartTime(int starttime\/*=-1*\/)$/;"	f	class:CBinLog
+ShiftFiles	tfc_binlog.cpp	/^int CBinLog::ShiftFiles()$/;"	f	class:CBinLog
+StartUp	tfc_cache_access.cpp	/^int CacheAccess::StartUp()$/;"	f	class:CacheAccess
+StartUp	tfc_cache_access.cpp	/^int CacheAccessUin::StartUp()$/;"	f	class:CacheAccessUin
+StartUp	tfc_diskcache_access.cpp	/^int CacheAccess::StartUp()$/;"	f	class:CacheAccess
+StartUp	tfc_diskcache_access.cpp	/^int CacheAccessUin::StartUp()$/;"	f	class:CacheAccessUin
+StartUp_mirror	tfc_cache_access.cpp	/^int CacheAccess::StartUp_mirror()$/;"	f	class:CacheAccess
+StartUp_mirror	tfc_diskcache_access.cpp	/^int CacheAccess::StartUp_mirror()$/;"	f	class:CacheAccess
+TChunk	tfc_cache_chunk_alloc.h	/^	}TChunk;$/;"	t	namespace:tfc::cache
+TChunkNode	tfc_cache_chunk_alloc.h	/^	}TChunkNode;$/;"	t	namespace:tfc::cache
+TDiskChunk	tfc_diskcache_chunk_alloc.h	/^	}TDiskChunk;$/;"	t	namespace:tfc::diskcache
+TDiskChunkNode	tfc_diskcache_chunk_alloc.h	/^	}TDiskChunkNode;$/;"	t	namespace:tfc::diskcache
+THashMap	tfc_cache_hash_map.h	/^	}THashMap;$/;"	t	namespace:tfc::cache
+THashMap	tfc_diskcache_hash_map.h	/^	}THashMap;$/;"	t	namespace:tfc::diskcache
+THashNode	tfc_cache_hash_map.h	/^	}THashNode;$/;"	t	namespace:tfc::cache
+THashNode	tfc_diskcache_hash_map.h	/^	}THashNode;$/;"	t	namespace:tfc::diskcache
+TMBHashKey	tfc_cache_hash_map.h	/^	}TMBHashKey;$/;"	t	namespace:tfc::cache
+TMBHashKey	tfc_diskcache_hash_map.h	/^	}TMBHashKey;$/;"	t	namespace:tfc::diskcache
+WriteToBinLog	tfc_binlog.cpp	/^int CBinLog::WriteToBinLog(char* buff, int len)$/;"	f	class:CBinLog
+_	tfc_cache_hash_map.h	/^		un_key _;$/;"	m	struct:tfc::cache::tagTMBHashKey
+_	tfc_diskcache_hash_map.h	/^		un_key _;$/;"	m	struct:tfc::diskcache::tagTMBHashKey
+_CHUNK_ALLOC_HPP_	tfc_cache_chunk_alloc.h	3;"	d
+_TFC_BINLOG	tfc_binlog.hpp	2;"	d
+_TFC_CACHE_ACCESS_H_	tfc_cache_access.h	3;"	d
+_TFC_CACHE_BIT_MAP_H_	tfc_cache_bit_map.h	3;"	d
+_TFC_CACHE_HASH_MAP_H_	tfc_cache_hash_map.h	3;"	d
+_TFC_CACHE_PROC_H_	tfc_cache_proc.h	3;"	d
+_TFC_DISKCACHE_ACCESS_H_	tfc_diskcache_access.h	3;"	d
+_TFC_DISKCACHE_CHUNK_ALLOC_H_	tfc_diskcache_chunk_alloc.h	2;"	d
+_TFC_DISKCACHE_HASH_MAP_H_	tfc_diskcache_hash_map.h	3;"	d
+__USE_LARGEFILE64	tfc_diskcache_chunk_alloc.cpp	27;"	d	file:
+_active	tfc_cache_proc.h	/^		bool _active;			\/\/是否在一次epoll中激活, true-激活，false-未激活$/;"	m	struct:tfc::cache::<anonymous>
+_binlog	tfc_cache_access.h	/^		CBinLog _binlog;$/;"	m	class:tfc::cache::CacheAccess
+_binlog	tfc_diskcache_access.h	/^		CBinLog _binlog;$/;"	m	class:tfc::diskcache::CacheAccess
+_bit_count	tfc_cache_bit_map.h	/^        int _bit_count[256];            \/\/用于数字含1个数的计算$/;"	m	class:tfc::cache::CBitMap
+_cache	tfc_cache_access.h	/^		CHashMap * const _cache;$/;"	m	class:tfc::cache::CacheAccess::dirty_iterator
+_cache	tfc_cache_access.h	/^		CHashMap _cache;$/;"	m	class:tfc::cache::CacheAccess
+_cache	tfc_diskcache_access.h	/^		CHashMap * const _cache;$/;"	m	class:tfc::diskcache::CacheAccess::dirty_iterator
+_cache	tfc_diskcache_access.h	/^		CHashMap _cache;$/;"	m	class:tfc::diskcache::CacheAccess
+_cache_dump_file	tfc_cache_access.h	/^		char _cache_dump_file[256];$/;"	m	class:tfc::cache::CacheAccess
+_cache_dump_file	tfc_diskcache_access.h	/^		char _cache_dump_file[256];$/;"	m	class:tfc::diskcache::CacheAccess
+_cache_dump_min	tfc_cache_access.h	/^		int _cache_dump_min;$/;"	m	class:tfc::cache::CacheAccess
+_cache_dump_min	tfc_diskcache_access.h	/^		int _cache_dump_min;$/;"	m	class:tfc::diskcache::CacheAccess
+_cache_dump_point	tfc_cache_access.h	/^		unsigned _cache_dump_point;$/;"	m	class:tfc::cache::CacheAccess
+_cache_dump_point	tfc_diskcache_access.h	/^		unsigned _cache_dump_point;$/;"	m	class:tfc::diskcache::CacheAccess
+_cacheinit	tfc_cache_access.h	/^		bool _cacheinit;$/;"	m	class:tfc::cache::CacheAccess
+_cacheinit	tfc_diskcache_access.h	/^		bool _cacheinit;$/;"	m	class:tfc::diskcache::CacheAccess
+_caches	tfc_cache_proc.h	/^		std::map<std::string, tfc::cache::CacheAccess*> _caches;$/;"	m	class:tfc::cache::CacheProc
+_cur_node	tfc_cache_access.h	/^		THashNode* _cur_node;$/;"	m	class:tfc::cache::CacheAccess::dirty_iterator
+_cur_node	tfc_diskcache_access.h	/^		THashNode* _cur_node;$/;"	m	class:tfc::diskcache::CacheAccess::dirty_iterator
+_da	tfc_cache_access.h	/^		CacheAccess& _da;$/;"	m	class:tfc::cache::CacheAccessUin
+_da	tfc_diskcache_access.h	/^		CacheAccess& _da;$/;"	m	class:tfc::diskcache::CacheAccessUin
+_disk_caches	tfc_cache_proc.h	/^		std::map<std::string, tfc::diskcache::CacheAccess*> _disk_caches;$/;"	m	class:tfc::cache::CacheProc
+_epfd	tfc_cache_proc.h	/^		int _epfd;$/;"	m	class:tfc::cache::CacheProc
+_func	tfc_cache_proc.h	/^		disp_func	_func;		\/\/当关联的mq有数据的时候调用的回调函数$/;"	m	struct:tfc::cache::<anonymous>
+_infonum	tfc_cache_proc.h	/^		int _infonum;$/;"	m	class:tfc::cache::CacheProc
+_lastdumptime	tfc_cache_access.h	/^		time_t _lastdumptime;$/;"	m	class:tfc::cache::CacheAccess
+_lastdumptime	tfc_diskcache_access.h	/^		time_t _lastdumptime;$/;"	m	class:tfc::diskcache::CacheAccess
+_log_basename	tfc_binlog.hpp	/^	char _log_basename[256];$/;"	m	class:CBinLog
+_maxlog_num	tfc_binlog.hpp	/^	int _maxlog_num;$/;"	m	class:CBinLog
+_maxlog_size	tfc_binlog.hpp	/^	long _maxlog_size;$/;"	m	class:CBinLog
+_mem	tfc_cache_access.h	/^		char *_mem;$/;"	m	class:tfc::cache::CacheAccess
+_mem	tfc_diskcache_access.h	/^		char *_mem;$/;"	m	class:tfc::diskcache::CacheAccess
+_mem_size	tfc_cache_access.h	/^		unsigned _mem_size;$/;"	m	class:tfc::cache::CacheAccess
+_mem_size	tfc_diskcache_access.h	/^		unsigned _mem_size;$/;"	m	class:tfc::diskcache::CacheAccess
+_mq	tfc_cache_proc.h	/^		CFifoSyncMQ* _mq;		\/\/关联mq$/;"	m	struct:tfc::cache::<anonymous>
+_mq_info	tfc_cache_proc.h	/^		MQInfo	_mq_info[32];$/;"	m	class:tfc::cache::CacheProc
+_mqs	tfc_cache_proc.h	/^		std::map<std::string, tfc::net::CFifoSyncMQ*> _mqs;$/;"	m	class:tfc::cache::CacheProc
+_pool	tfc_cache_bit_map.h	/^    	char *_pool;                        \/\/ bitmap头指针$/;"	m	class:tfc::cache::CBitMap
+_pool_size	tfc_cache_bit_map.h	/^    	unsigned _pool_size;                \/\/ bitmap内存快尺寸，以byte为单位$/;"	m	class:tfc::cache::CBitMap
+_priv	tfc_cache_proc.h	/^		void* _priv;			\/\/回调函数的自定义参数$/;"	m	struct:tfc::cache::<anonymous>
+_read_fp	tfc_binlog.hpp	/^	FILE *_read_fp;	$/;"	m	class:CBinLog
+_readidx	tfc_binlog.hpp	/^	int _readidx;$/;"	m	class:CBinLog
+_set_count	tfc_cache_bit_map.h	/^    	unsigned long long _set_count;      \/\/ bitmap已置位的位数$/;"	m	class:tfc::cache::CBitMap
+_write_fp	tfc_binlog.hpp	/^	FILE *_write_fp;$/;"	m	class:CBinLog
+add_head_	tfc_cache_hash_map.h	/^		BC_MEM_HANDLER add_head_;	 \/\/附加链表头指针$/;"	m	struct:tfc::cache::tagTHashMap
+add_head_	tfc_diskcache_hash_map.h	/^		BC_DISK_HANDLER add_head_;	 \/\/附加链表头指针$/;"	m	struct:tfc::diskcache::tagTHashMap
+add_info_1_	tfc_cache_hash_map.h	/^		int add_info_1_;				\/\/最后访问时间$/;"	m	struct:tfc::cache::tagTHashNode
+add_info_1_	tfc_diskcache_hash_map.h	/^		int add_info_1_;			\/\/最后访问时间$/;"	m	struct:tfc::diskcache::tagTHashNode
+add_info_2_	tfc_cache_hash_map.h	/^		int add_info_2_;			\/\/过期时间$/;"	m	struct:tfc::cache::tagTHashNode
+add_info_2_	tfc_diskcache_hash_map.h	/^		int add_info_2_;			\/\/超时时间$/;"	m	struct:tfc::diskcache::tagTHashNode
+add_mq_2_epoll	tfc_cache_proc.cpp	/^int CacheProc::add_mq_2_epoll(CFifoSyncMQ* mq, disp_func func, void* priv) {$/;"	f	class:CacheProc
+add_next_	tfc_cache_hash_map.h	/^		BC_MEM_HANDLER add_next_;	 \/\/附加链表后指针$/;"	m	struct:tfc::cache::tagTHashNode
+add_next_	tfc_diskcache_hash_map.h	/^		BC_DISK_HANDLER add_next_;	 \/\/附加链表后指针$/;"	m	struct:tfc::diskcache::tagTHashNode
+add_prev_	tfc_cache_hash_map.h	/^		BC_MEM_HANDLER add_prev_;	 \/\/附加链表前指针$/;"	m	struct:tfc::cache::tagTHashNode
+add_prev_	tfc_diskcache_hash_map.h	/^		BC_DISK_HANDLER add_prev_;	 \/\/附加链表前指针$/;"	m	struct:tfc::diskcache::tagTHashNode
+add_tail_	tfc_cache_hash_map.h	/^		BC_MEM_HANDLER add_tail_;	 \/\/附加链表尾指针$/;"	m	struct:tfc::cache::tagTHashMap
+add_tail_	tfc_diskcache_hash_map.h	/^		BC_DISK_HANDLER add_tail_;	 \/\/附加链表尾指针$/;"	m	struct:tfc::diskcache::tagTHashMap
+allocator_	tfc_cache_hash_map.h	/^		CChunkAllocator allocator_; \/\/CHUNK分配器$/;"	m	class:tfc::cache::CHashMap
+allocator_	tfc_diskcache_hash_map.h	/^		CDiskChunkAllocator allocator_; \/\/Disk Chunk分配器$/;"	m	class:tfc::diskcache::CHashMap
+begin	tfc_cache_access.h	/^	dirty_iterator begin(){return dirty_iterator(&_cache, _cache.get_add_list_head());}$/;"	f	class:tfc::cache::CacheAccess
+begin	tfc_diskcache_access.h	/^	dirty_iterator begin(){return dirty_iterator(&_cache, _cache.get_add_list_head());}$/;"	f	class:tfc::diskcache::CacheAccess
+bit_set_num	tfc_cache_bit_map.h	/^        unsigned long long bit_set_num(){return _set_count;}$/;"	f	class:tfc::cache::CBitMap
+bucket	tfc_cache_hash_map.h	/^		BC_MEM_HANDLER bucket[1];	 \/\/HASH桶$/;"	m	struct:tfc::cache::tagTHashMap
+bucket	tfc_diskcache_hash_map.h	/^		BC_DISK_HANDLER bucket[1];	 \/\/HASH桶$/;"	m	struct:tfc::diskcache::tagTHashMap
+bucket_size_	tfc_cache_hash_map.h	/^		int bucket_size_;			   \/\/HASH桶的大小$/;"	m	struct:tfc::cache::tagTHashMap
+bucket_size_	tfc_diskcache_hash_map.h	/^		int bucket_size_;			   \/\/HASH桶的大小$/;"	m	struct:tfc::diskcache::tagTHashMap
+buf	http_app.cpp	/^	char buf[1<<20];$/;"	m	class:CHttpApp	file:
+buf	http_app_fwd.cpp	/^	char buf[1<<20];$/;"	m	class:CHttpApp	file:
+cache	tfc_cache_access.h	/^namespace tfc{namespace cache$/;"	n	namespace:tfc
+cache	tfc_cache_bit_map.h	/^namespace tfc{namespace cache$/;"	n	namespace:tfc
+cache	tfc_cache_chunk_alloc.h	/^namespace tfc{namespace cache{$/;"	n	namespace:tfc
+cache	tfc_cache_hash_map.h	/^namespace tfc{namespace cache$/;"	n	namespace:tfc
+cache	tfc_cache_proc.h	/^namespace tfc{namespace cache$/;"	n	namespace:tfc
+ccdheader	http_app_fwd.cpp	/^	TCCDHeader* ccdheader;$/;"	m	class:CHttpApp	file:
+chunk_	tfc_cache_chunk_alloc.h	/^		TChunk *chunk_; \/\/内存块中的 TChunk 结构的指针$/;"	m	class:tfc::cache::CChunkAllocator
+chunk_	tfc_diskcache_chunk_alloc.h	/^		TDiskChunk *chunk_; \/\/管理内存块中的 TChunk 结构的指针$/;"	m	class:tfc::diskcache::CDiskChunkAllocator
+chunk_head_	tfc_cache_hash_map.h	/^		BC_MEM_HANDLER chunk_head_;   \/\/CHUNK 句柄$/;"	m	struct:tfc::cache::tagTHashNode
+chunk_head_	tfc_diskcache_hash_map.h	/^		BC_DISK_HANDLER chunk_head_;   \/\/CHUNK 句柄$/;"	m	struct:tfc::diskcache::tagTHashNode
+chunk_len_	tfc_cache_hash_map.h	/^		int chunk_len_;				 \/\/CHUNK中的数据长度$/;"	m	struct:tfc::cache::tagTHashNode
+chunk_len_	tfc_diskcache_hash_map.h	/^		int chunk_len_;				 \/\/CHUNK中的数据长度$/;"	m	struct:tfc::diskcache::tagTHashNode
+chunk_nodes_	tfc_cache_chunk_alloc.h	/^		TChunkNode chunk_nodes_[1]; \/\/CHUNK数组$/;"	m	struct:tfc::cache::tagTChunk
+chunk_nodes_	tfc_diskcache_chunk_alloc.h	/^		TDiskChunkNode chunk_nodes_[1]; \/\/CHUNK数组$/;"	m	struct:tfc::diskcache::tagTDiskChunk
+chunk_size_	tfc_cache_chunk_alloc.h	/^		int chunk_size_;            \/\/CHUNK数据片尺寸$/;"	m	struct:tfc::cache::tagTChunk
+chunk_size_	tfc_diskcache_chunk_alloc.h	/^		int chunk_size_;            \/\/CHUNK数据片尺寸$/;"	m	struct:tfc::diskcache::tagTDiskChunk
+chunk_total_	tfc_cache_chunk_alloc.h	/^		int chunk_total_;           \/\/CHUNK总节点数$/;"	m	struct:tfc::cache::tagTChunk
+chunk_total_	tfc_diskcache_chunk_alloc.h	/^		int chunk_total_;           \/\/CHUNK总节点数$/;"	m	struct:tfc::diskcache::tagTDiskChunk
+chunks	tfc_cache_hash_map.h	/^		CChunkAllocator* chunks() {return &allocator_; };$/;"	f	class:tfc::cache::CHashMap
+chunks	tfc_diskcache_hash_map.h	/^		CDiskChunkAllocator* chunks() {return &allocator_; };$/;"	f	class:tfc::diskcache::CHashMap
+clear	tfc_cache_bit_map.cpp	/^int CBitMap::clear()$/;"	f	class:CBitMap
+clear_bit	tfc_cache_bit_map.h	/^inline int CBitMap::clear_bit(unsigned long long pos)$/;"	f	class:tfc::cache::CBitMap
+compiling_date	version.cpp	/^char compiling_date[] = "build date: "__DATE__;$/;"	v
+content	http_app.cpp	/^	char content[1<<24];$/;"	m	class:CHttpApp	file:
+content_len	http_app.cpp	/^	unsigned content_len;$/;"	m	class:CHttpApp	file:
+core_dump	tfc_cache_access.cpp	/^int CacheAccess::core_dump(char *szcorefile)$/;"	f	class:CacheAccess
+core_dump	tfc_cache_access.cpp	/^int CacheAccessUin::core_dump(char *szcorefile)$/;"	f	class:CacheAccessUin
+core_dump	tfc_diskcache_access.cpp	/^int CacheAccess::core_dump(char *szcorefile)$/;"	f	class:CacheAccess
+core_dump	tfc_diskcache_access.cpp	/^int CacheAccessUin::core_dump(char *szcorefile)$/;"	f	class:CacheAccessUin
+core_dump_mem	tfc_cache_access.cpp	/^int CacheAccess::core_dump_mem(char *buff, int maxsize,int modbase, int mobres)$/;"	f	class:CacheAccess
+core_dump_mem	tfc_cache_access.cpp	/^int CacheAccessUin::core_dump_mem(char *buff, int maxsize,int modbase, int mobres)$/;"	f	class:CacheAccessUin
+core_dump_mem	tfc_diskcache_access.cpp	/^int CacheAccess::core_dump_mem(char *buff, int maxsize,int modbase, int mobres)$/;"	f	class:CacheAccess
+core_dump_mem	tfc_diskcache_access.cpp	/^int CacheAccessUin::core_dump_mem(char *buff, int maxsize,int modbase, int mobres)$/;"	f	class:CacheAccessUin
+core_recover	tfc_cache_access.cpp	/^int CacheAccess::core_recover(char *szcorefile)$/;"	f	class:CacheAccess
+core_recover	tfc_cache_access.cpp	/^int CacheAccessUin::core_recover(char *szcorefile)$/;"	f	class:CacheAccessUin
+core_recover	tfc_diskcache_access.cpp	/^int CacheAccess::core_recover(char *szcorefile)$/;"	f	class:CacheAccess
+core_recover	tfc_diskcache_access.cpp	/^int CacheAccessUin::core_recover(char *szcorefile)$/;"	f	class:CacheAccessUin
+core_recover_mem	tfc_cache_access.cpp	/^int CacheAccess::core_recover_mem(char *buff, int buffsize)$/;"	f	class:CacheAccess
+core_recover_mem	tfc_cache_access.cpp	/^int CacheAccessUin::core_recover_mem(char *buff, int buffsize)$/;"	f	class:CacheAccessUin
+core_recover_mem	tfc_diskcache_access.cpp	/^int CacheAccess::core_recover_mem(char *buff, int buffsize)$/;"	f	class:CacheAccess
+core_recover_mem	tfc_diskcache_access.cpp	/^int CacheAccessUin::core_recover_mem(char *buff, int buffsize)$/;"	f	class:CacheAccessUin
+create_app	http_app.cpp	/^	CacheProc* create_app()$/;"	f
+create_app	http_app_fwd.cpp	/^	CacheProc* create_app()$/;"	f
+create_app	test_app.cpp	/^	CacheProc* create_app()$/;"	f
+data_	tfc_cache_chunk_alloc.h	/^		char data_[1];              \/\/数据区$/;"	m	struct:tfc::cache::tagTChunkNode
+data_fd_	tfc_diskcache_chunk_alloc.h	/^		int data_fd_;$/;"	m	class:tfc::diskcache::CDiskChunkAllocator
+dccheader	http_app_fwd.cpp	/^	TDCCHeader* dccheader;$/;"	m	class:CHttpApp	file:
+del	tfc_cache_access.cpp	/^int CacheAccess::del(const char* key)$/;"	f	class:CacheAccess
+del	tfc_cache_access.cpp	/^int CacheAccessUin::del(unsigned uin)$/;"	f	class:CacheAccessUin
+del	tfc_diskcache_access.cpp	/^int CacheAccess::del(const char* key)$/;"	f	class:CacheAccess
+del	tfc_diskcache_access.cpp	/^int CacheAccessUin::del(unsigned uin)$/;"	f	class:CacheAccessUin
+del_node	tfc_cache_access.cpp	/^int CacheAccess::del_node(int modbase, int mobres)$/;"	f	class:CacheAccess
+del_node	tfc_cache_access.cpp	/^int CacheAccessUin::del_node(int modbase, int mobres)$/;"	f	class:CacheAccessUin
+del_node	tfc_diskcache_access.cpp	/^int CacheAccess::del_node(int modbase, int mobres)$/;"	f	class:CacheAccess
+del_node	tfc_diskcache_access.cpp	/^int CacheAccessUin::del_node(int modbase, int mobres)$/;"	f	class:CacheAccessUin
+delete_from_add_list	tfc_cache_hash_map.cpp	/^void CHashMap::delete_from_add_list(THashNode* node)$/;"	f	class:CHashMap
+delete_from_add_list	tfc_diskcache_hash_map.cpp	/^void CHashMap::delete_from_add_list(THashNode* node)$/;"	f	class:CHashMap
+delete_from_node_list	tfc_cache_hash_map.cpp	/^void CHashMap::delete_from_node_list(THashNode* node)$/;"	f	class:CHashMap
+delete_from_node_list	tfc_diskcache_hash_map.cpp	/^void CHashMap::delete_from_node_list(THashNode* node)$/;"	f	class:CHashMap
+delete_node	tfc_cache_hash_map.cpp	/^int CHashMap::delete_node(THashNode* node, char* data, int* data_len)$/;"	f	class:CHashMap
+delete_node	tfc_diskcache_hash_map.cpp	/^int CHashMap::delete_node(THashNode* node, char* data, int* data_len)$/;"	f	class:CHashMap
+dirty_iterator	tfc_cache_access.h	/^		dirty_iterator(CHashMap* cache, THashNode* cur_node)$/;"	f	class:tfc::cache::CacheAccess::dirty_iterator
+dirty_iterator	tfc_cache_access.h	/^		dirty_iterator(const dirty_iterator& right)$/;"	f	class:tfc::cache::CacheAccess::dirty_iterator
+dirty_iterator	tfc_cache_access.h	/^	class dirty_iterator$/;"	c	class:tfc::cache::CacheAccess
+dirty_iterator	tfc_diskcache_access.h	/^		dirty_iterator(CHashMap* cache, THashNode* cur_node)$/;"	f	class:tfc::diskcache::CacheAccess::dirty_iterator
+dirty_iterator	tfc_diskcache_access.h	/^		dirty_iterator(const dirty_iterator& right)$/;"	f	class:tfc::diskcache::CacheAccess::dirty_iterator
+dirty_iterator	tfc_diskcache_access.h	/^	class dirty_iterator$/;"	c	class:tfc::diskcache::CacheAccess
+diskcache	tfc_diskcache_access.h	/^namespace tfc{namespace diskcache$/;"	n	namespace:tfc
+diskcache	tfc_diskcache_chunk_alloc.h	/^namespace tfc{namespace diskcache{$/;"	n	namespace:tfc
+diskcache	tfc_diskcache_hash_map.h	/^namespace tfc{namespace diskcache$/;"	n	namespace:tfc
+disp_ccd	http_app.cpp	/^void disp_ccd(void *priv)$/;"	f
+disp_ccd	http_app_fwd.cpp	/^void disp_ccd(void* priv)$/;"	f
+disp_dcc	http_app_fwd.cpp	/^void disp_dcc(void* priv)$/;"	f
+disp_func	tfc_cache_proc.h	/^	typedef void (*disp_func)(void*);$/;"	t	namespace:tfc::cache
+dispatch_ccd	http_app.cpp	/^void CHttpApp::dispatch_ccd()$/;"	f	class:CHttpApp
+dispatch_ccd	http_app_fwd.cpp	/^void CHttpApp::dispatch_ccd()$/;"	f	class:CHttpApp
+dispatch_dcc	http_app_fwd.cpp	/^void CHttpApp::dispatch_dcc()$/;"	f	class:CHttpApp
+dump	tfc_cache_bit_map.cpp	/^int CBitMap::dump(std::string dump_file)$/;"	f	class:CBitMap
+dump_and	tfc_cache_bit_map.cpp	/^int CBitMap::dump_and(std::string dump_file)$/;"	f	class:CBitMap
+dump_or	tfc_cache_bit_map.cpp	/^int CBitMap::dump_or(std::string dump_file)$/;"	f	class:CBitMap
+end	tfc_cache_access.h	/^	dirty_iterator end(){return dirty_iterator(&_cache, NULL);}$/;"	f	class:tfc::cache::CacheAccess
+end	tfc_diskcache_access.h	/^	dirty_iterator end(){return dirty_iterator(&_cache, NULL);}$/;"	f	class:tfc::diskcache::CacheAccess
+find_node	tfc_cache_hash_map.cpp	/^THashNode* CHashMap::find_node(TMBHashKey &key)$/;"	f	class:CHashMap
+find_node	tfc_diskcache_hash_map.cpp	/^THashNode* CHashMap::find_node(TMBHashKey &key)$/;"	f	class:CHashMap
+flag_	tfc_cache_hash_map.h	/^		int flag_;\/\/脏标记$/;"	m	struct:tfc::cache::tagTHashNode
+flag_	tfc_diskcache_hash_map.h	/^		int flag_;\/\/脏标记$/;"	m	struct:tfc::diskcache::tagTHashNode
+free	tfc_cache_chunk_alloc.cpp	/^void CChunkAllocator::free(BC_MEM_HANDLER head_chunk_hdr)$/;"	f	class:CChunkAllocator
+free	tfc_diskcache_chunk_alloc.cpp	/^void CDiskChunkAllocator::free(BC_DISK_HANDLER head_chunk_hdr)$/;"	f	class:CDiskChunkAllocator
+free_bucket_num	tfc_cache_hash_map.h	/^		int free_bucket_num() {return hash_map_->bucket_size_ - hash_map_->used_bucket_num_; }$/;"	f	class:tfc::cache::CHashMap
+free_bucket_num	tfc_diskcache_hash_map.h	/^		int free_bucket_num() {return hash_map_->bucket_size_ - hash_map_->used_bucket_num_; }$/;"	f	class:tfc::diskcache::CHashMap
+free_list_	tfc_cache_chunk_alloc.h	/^		BC_MEM_HANDLER free_list_;    \/\/空闲CHUNK链表头指针$/;"	m	struct:tfc::cache::tagTChunk
+free_list_	tfc_cache_hash_map.h	/^		BC_MEM_HANDLER free_list_;	\/\/空间节点链表头指针$/;"	m	struct:tfc::cache::tagTHashMap
+free_list_	tfc_diskcache_chunk_alloc.h	/^		BC_DISK_HANDLER free_list_;    \/\/空闲CHUNK链表头指针$/;"	m	struct:tfc::diskcache::tagTDiskChunk
+free_list_	tfc_diskcache_hash_map.h	/^		BC_DISK_HANDLER free_list_;	\/\/空间节点链表头指针$/;"	m	struct:tfc::diskcache::tagTHashMap
+free_list_insert	tfc_cache_chunk_alloc.cpp	/^inline void CChunkAllocator::free_list_insert(TChunkNode *node)$/;"	f	class:CChunkAllocator
+free_list_insert	tfc_cache_hash_map.h	/^inline void CHashMap::free_list_insert(THashNode *node)$/;"	f	class:tfc::cache::CHashMap
+free_list_insert	tfc_diskcache_chunk_alloc.cpp	/^inline void CDiskChunkAllocator::free_list_insert(TDiskChunkNode *node)$/;"	f	class:CDiskChunkAllocator
+free_list_insert	tfc_diskcache_hash_map.h	/^inline void CHashMap::free_list_insert(THashNode *node)$/;"	f	class:tfc::diskcache::CHashMap
+free_list_remove	tfc_cache_chunk_alloc.cpp	/^inline TChunkNode* CChunkAllocator::free_list_remove()$/;"	f	class:CChunkAllocator
+free_list_remove	tfc_cache_hash_map.h	/^inline THashNode* CHashMap::free_list_remove()$/;"	f	class:tfc::cache::CHashMap
+free_list_remove	tfc_diskcache_chunk_alloc.cpp	/^inline TDiskChunkNode* CDiskChunkAllocator::free_list_remove()$/;"	f	class:CDiskChunkAllocator
+free_list_remove	tfc_diskcache_hash_map.h	/^inline THashNode* CHashMap::free_list_remove()$/;"	f	class:tfc::diskcache::CHashMap
+free_node	tfc_cache_hash_map.cpp	/^void CHashMap::free_node(THashNode *node)$/;"	f	class:CHashMap
+free_node	tfc_diskcache_hash_map.cpp	/^void CHashMap::free_node(THashNode *node)$/;"	f	class:CHashMap
+free_node_num	tfc_cache_hash_map.h	/^		int free_node_num() { return hash_map_->node_total_ - hash_map_->used_node_num_; }$/;"	f	class:tfc::cache::CHashMap
+free_node_num	tfc_diskcache_hash_map.h	/^		int free_node_num() { return hash_map_->node_total_ - hash_map_->used_node_num_; }$/;"	f	class:tfc::diskcache::CHashMap
+free_total_	tfc_cache_chunk_alloc.h	/^		int free_total_;            \/\/空闲CHUNK总数$/;"	m	struct:tfc::cache::tagTChunk
+free_total_	tfc_diskcache_chunk_alloc.h	/^		int free_total_;            \/\/空闲CHUNK总数$/;"	m	struct:tfc::diskcache::tagTDiskChunk
+get	tfc_cache_access.cpp	/^int CacheAccess::get(const char* key, char* buf, unsigned buf_size$/;"	f	class:CacheAccess
+get	tfc_cache_access.cpp	/^int CacheAccessUin::get(unsigned uin, char* buf, unsigned buf_size$/;"	f	class:CacheAccessUin
+get	tfc_cache_access.h	/^		int get(char* key, char* buf, unsigned buf_size, unsigned& data_len)$/;"	f	class:tfc::cache::CacheAccess::dirty_iterator
+get	tfc_diskcache_access.cpp	/^int CacheAccess::get(const char* key, char* buf, unsigned buf_size$/;"	f	class:CacheAccess
+get	tfc_diskcache_access.cpp	/^int CacheAccessUin::get(unsigned uin, char* buf, unsigned buf_size$/;"	f	class:CacheAccessUin
+get	tfc_diskcache_access.h	/^		int get(char* key, char* buf, unsigned buf_size, unsigned& data_len)$/;"	f	class:tfc::diskcache::CacheAccess::dirty_iterator
+get_add_list_head	tfc_cache_hash_map.cpp	/^THashNode* CHashMap::get_add_list_head()$/;"	f	class:CHashMap
+get_add_list_head	tfc_diskcache_hash_map.cpp	/^THashNode* CHashMap::get_add_list_head()$/;"	f	class:CHashMap
+get_add_list_next	tfc_cache_hash_map.cpp	/^THashNode* CHashMap::get_add_list_next(THashNode* node)$/;"	f	class:CHashMap
+get_add_list_next	tfc_diskcache_hash_map.cpp	/^THashNode* CHashMap::get_add_list_next(THashNode* node)$/;"	f	class:CHashMap
+get_add_list_prev	tfc_cache_hash_map.cpp	/^THashNode* CHashMap::get_add_list_prev(THashNode* node)$/;"	f	class:CHashMap
+get_add_list_prev	tfc_diskcache_hash_map.cpp	/^THashNode* CHashMap::get_add_list_prev(THashNode* node)$/;"	f	class:CHashMap
+get_add_list_tail	tfc_cache_hash_map.cpp	/^THashNode* CHashMap::get_add_list_tail()$/;"	f	class:CHashMap
+get_add_list_tail	tfc_diskcache_hash_map.cpp	/^THashNode* CHashMap::get_add_list_tail()$/;"	f	class:CHashMap
+get_bucket_id	tfc_cache_hash_map.h	/^inline int CHashMap::get_bucket_id(TMBHashKey &key)$/;"	f	class:tfc::cache::CHashMap
+get_bucket_id	tfc_diskcache_hash_map.h	/^inline int CHashMap::get_bucket_id(TMBHashKey &key)$/;"	f	class:tfc::diskcache::CHashMap
+get_bucket_list_head	tfc_cache_hash_map.h	/^inline THashNode*  CHashMap::get_bucket_list_head(unsigned bucket_id)$/;"	f	class:tfc::cache::CHashMap
+get_bucket_list_head	tfc_diskcache_hash_map.h	/^inline THashNode*  CHashMap::get_bucket_list_head(unsigned bucket_id)$/;"	f	class:tfc::diskcache::CHashMap
+get_bucket_list_len	tfc_cache_hash_map.cpp	/^int CHashMap::get_bucket_list_len(int bucket_id)$/;"	f	class:CHashMap
+get_bucket_list_len	tfc_diskcache_hash_map.cpp	/^int CHashMap::get_bucket_list_len(int bucket_id)$/;"	f	class:CHashMap
+get_bucket_list_next	tfc_cache_hash_map.h	/^inline THashNode*  CHashMap::get_bucket_list_next(THashNode* node)$/;"	f	class:tfc::cache::CHashMap
+get_bucket_list_next	tfc_diskcache_hash_map.h	/^inline THashNode*  CHashMap::get_bucket_list_next(THashNode* node)$/;"	f	class:tfc::diskcache::CHashMap
+get_bucket_list_prev	tfc_cache_hash_map.h	/^inline THashNode*  CHashMap::get_bucket_list_prev(THashNode* node)$/;"	f	class:tfc::cache::CHashMap
+get_bucket_list_prev	tfc_diskcache_hash_map.h	/^inline THashNode*  CHashMap::get_bucket_list_prev(THashNode* node)$/;"	f	class:tfc::diskcache::CHashMap
+get_bucket_size	tfc_cache_hash_map.h	/^		int get_bucket_size() {return hash_map_->bucket_size_;}$/;"	f	class:tfc::cache::CHashMap
+get_bucket_size	tfc_diskcache_hash_map.h	/^		int get_bucket_size() {return hash_map_->bucket_size_;}$/;"	f	class:tfc::diskcache::CHashMap
+get_bucket_used	tfc_cache_hash_map.h	/^		int get_bucket_used() { return hash_map_->used_bucket_num_; }$/;"	f	class:tfc::cache::CHashMap
+get_bucket_used	tfc_diskcache_hash_map.h	/^		int get_bucket_used() { return hash_map_->used_bucket_num_; }$/;"	f	class:tfc::diskcache::CHashMap
+get_chunk_node_size	tfc_diskcache_chunk_alloc.h	/^		static int get_chunk_node_size()$/;"	f	class:tfc::diskcache::CDiskChunkAllocator
+get_chunk_num	tfc_cache_chunk_alloc.cpp	/^int CChunkAllocator::get_chunk_num(int data_len)$/;"	f	class:CChunkAllocator
+get_chunk_num	tfc_diskcache_chunk_alloc.cpp	/^int CDiskChunkAllocator::get_chunk_num(int data_len)$/;"	f	class:CDiskChunkAllocator
+get_chunk_size	tfc_cache_chunk_alloc.h	/^		static int get_chunk_size(int n_chunks, int chunk_size)$/;"	f	class:tfc::cache::CChunkAllocator
+get_chunk_total	tfc_cache_chunk_alloc.h	/^		int get_chunk_total() { return chunk_->chunk_total_; }$/;"	f	class:tfc::cache::CChunkAllocator
+get_chunk_total	tfc_cache_hash_map.h	/^		int get_chunk_total() { return allocator_.get_chunk_total(); }$/;"	f	class:tfc::cache::CHashMap
+get_chunk_total	tfc_diskcache_chunk_alloc.h	/^		int get_chunk_total() { return chunk_->chunk_total_; }$/;"	f	class:tfc::diskcache::CDiskChunkAllocator
+get_chunk_total	tfc_diskcache_hash_map.h	/^		int get_chunk_total() { return allocator_.get_chunk_total(); }$/;"	f	class:tfc::diskcache::CHashMap
+get_expiretime	tfc_cache_hash_map.cpp	/^int CHashMap::get_expiretime(THashNode* node)$/;"	f	class:CHashMap
+get_expiretime	tfc_diskcache_hash_map.cpp	/^int CHashMap::get_expiretime(THashNode* node)$/;"	f	class:CHashMap
+get_free_chunk_num	tfc_cache_chunk_alloc.h	/^		int get_free_chunk_num() { return chunk_->free_total_; };$/;"	f	class:tfc::cache::CChunkAllocator
+get_free_chunk_num	tfc_diskcache_chunk_alloc.h	/^		int get_free_chunk_num() { return chunk_->free_total_; };$/;"	f	class:tfc::diskcache::CDiskChunkAllocator
+get_key	tfc_cache_access.cpp	/^int CacheAccess::get_key(const char* key, unsigned& data_len, bool& dirty_flag, int& time_stamp)$/;"	f	class:CacheAccess
+get_key	tfc_cache_access.cpp	/^int CacheAccessUin::get_key(unsigned uin, unsigned& data_len, bool& dirty_flag, int& time_stamp)$/;"	f	class:CacheAccessUin
+get_key	tfc_diskcache_access.cpp	/^int CacheAccess::get_key(const char* key, unsigned& data_len, bool& dirty_flag, int& time_stamp)$/;"	f	class:CacheAccess
+get_key	tfc_diskcache_access.cpp	/^int CacheAccessUin::get_key(unsigned uin, unsigned& data_len, bool& dirty_flag, int& time_stamp)$/;"	f	class:CacheAccessUin
+get_lru_pre	tfc_cache_access.cpp	/^int CacheAccess::get_lru_pre(const char* key, char* pre_key$/;"	f	class:CacheAccess
+get_lru_pre	tfc_cache_access.cpp	/^int CacheAccessUin::get_lru_pre(unsigned uin, unsigned& pre_uin$/;"	f	class:CacheAccessUin
+get_lru_pre	tfc_diskcache_access.cpp	/^int CacheAccess::get_lru_pre(const char* key, char* pre_key$/;"	f	class:CacheAccess
+get_lru_pre	tfc_diskcache_access.cpp	/^int CacheAccessUin::get_lru_pre(unsigned uin, unsigned& pre_uin$/;"	f	class:CacheAccessUin
+get_memory	tfc_cache_access.h	/^		void get_memory(char **mem, unsigned& mem_size)$/;"	f	class:tfc::cache::CacheAccess
+get_memory	tfc_diskcache_access.h	/^		void get_memory(char **mem, unsigned& mem_size)$/;"	f	class:tfc::diskcache::CacheAccess
+get_node_flag	tfc_cache_hash_map.h	/^		ENodeFlag get_node_flag(THashNode *node){assert(node); return (ENodeFlag)node->flag_;}$/;"	f	class:tfc::cache::CHashMap
+get_node_flag	tfc_diskcache_hash_map.h	/^		ENodeFlag get_node_flag(THashNode *node){assert(node); return (ENodeFlag)node->flag_;}$/;"	f	class:tfc::diskcache::CHashMap
+get_node_num	tfc_cache_access.cpp	/^void CacheAccess::get_node_num($/;"	f	class:CacheAccess
+get_node_num	tfc_cache_access.cpp	/^void CacheAccessUin::get_node_num($/;"	f	class:CacheAccessUin
+get_node_num	tfc_diskcache_access.cpp	/^void CacheAccess::get_node_num($/;"	f	class:CacheAccess
+get_node_num	tfc_diskcache_access.cpp	/^void CacheAccessUin::get_node_num($/;"	f	class:CacheAccessUin
+get_node_total	tfc_cache_hash_map.h	/^		int get_node_total() { return hash_map_->node_total_; }$/;"	f	class:tfc::cache::CHashMap
+get_node_total	tfc_diskcache_hash_map.h	/^		int get_node_total() { return hash_map_->node_total_; }$/;"	f	class:tfc::diskcache::CHashMap
+get_pool_size	tfc_cache_chunk_alloc.h	/^		static int get_pool_size(int n_chunks, int chunk_size)$/;"	f	class:tfc::cache::CChunkAllocator
+get_pool_size	tfc_cache_hash_map.h	/^		static int get_pool_size(int node_total, int bucket_size)$/;"	f	class:tfc::cache::CHashMap
+get_pool_size	tfc_diskcache_chunk_alloc.h	/^		static int get_pool_size(int n_chunks)$/;"	f	class:tfc::diskcache::CDiskChunkAllocator
+get_pool_size	tfc_diskcache_hash_map.h	/^		static int get_pool_size(int node_total, int bucket_size)$/;"	f	class:tfc::diskcache::CHashMap
+get_set_count	tfc_cache_bit_map.h	/^inline unsigned long long CBitMap::get_set_count()$/;"	f	class:tfc::cache::CBitMap
+get_test_file	http_app.cpp	/^void CHttpApp::get_test_file(char* filename, char* content, unsigned& content_len) $/;"	f	class:CHttpApp
+get_total_pool_size	tfc_cache_hash_map.h	/^		static int get_total_pool_size(int node_total, int bucket_size, int n_chunks, int chunk_size)$/;"	f	class:tfc::cache::CHashMap
+get_total_pool_size	tfc_diskcache_hash_map.h	/^		static int get_total_pool_size(int node_total, int bucket_size, int n_chunks, int chunk_size)$/;"	f	class:tfc::diskcache::CHashMap
+get_used_chunk_num	tfc_cache_chunk_alloc.h	/^		int get_used_chunk_num() { return (chunk_->chunk_total_ - chunk_->free_total_); };$/;"	f	class:tfc::cache::CChunkAllocator
+get_used_chunk_num	tfc_cache_hash_map.h	/^		int get_used_chunk_num() { return allocator_.get_used_chunk_num(); }$/;"	f	class:tfc::cache::CHashMap
+get_used_chunk_num	tfc_diskcache_chunk_alloc.h	/^		int get_used_chunk_num() { return (chunk_->chunk_total_ - chunk_->free_total_); };$/;"	f	class:tfc::diskcache::CDiskChunkAllocator
+get_used_chunk_num	tfc_diskcache_hash_map.h	/^		int get_used_chunk_num() { return allocator_.get_used_chunk_num(); }$/;"	f	class:tfc::diskcache::CHashMap
+get_used_percent	tfc_cache_access.cpp	/^float CacheAccess::get_used_percent()$/;"	f	class:CacheAccess
+get_used_percent	tfc_cache_access.cpp	/^float CacheAccessUin::get_used_percent()$/;"	f	class:CacheAccessUin
+get_used_percent	tfc_diskcache_access.cpp	/^float CacheAccess::get_used_percent()$/;"	f	class:CacheAccess
+get_used_percent	tfc_diskcache_access.cpp	/^float CacheAccessUin::get_used_percent()$/;"	f	class:CacheAccessUin
+handler2ptr	tfc_cache_chunk_alloc.cpp	/^inline TChunkNode* CChunkAllocator::handler2ptr(BC_MEM_HANDLER handler)$/;"	f	class:CChunkAllocator
+handler2ptr	tfc_cache_hash_map.h	/^inline THashNode* CHashMap::handler2ptr(BC_MEM_HANDLER handler)$/;"	f	class:tfc::cache::CHashMap
+handler2ptr	tfc_diskcache_chunk_alloc.cpp	/^inline TDiskChunkNode* CDiskChunkAllocator::handler2ptr(BC_DISK_HANDLER handler)$/;"	f	class:CDiskChunkAllocator
+handler2ptr	tfc_diskcache_hash_map.h	/^inline THashNode* CHashMap::handler2ptr(BC_DISK_HANDLER handler)$/;"	f	class:tfc::diskcache::CHashMap
+hash_map_	tfc_cache_hash_map.h	/^		THashMap* hash_map_;   \/\/内存块中的HASHMAP 结构$/;"	m	class:tfc::cache::CHashMap
+hash_map_	tfc_diskcache_hash_map.h	/^		THashMap* hash_map_;   \/\/内存块中的HASHMAP 结构$/;"	m	class:tfc::diskcache::CHashMap
+hash_node_	tfc_cache_hash_map.h	/^		THashNode* hash_node_; \/\/内存块中的HASH节点数组$/;"	m	class:tfc::cache::CHashMap
+hash_node_	tfc_diskcache_hash_map.h	/^		THashNode* hash_node_; \/\/内存块中的HASH节点数组$/;"	m	class:tfc::diskcache::CHashMap
+init_bit_count	tfc_cache_bit_map.cpp	/^void CBitMap::init_bit_count()$/;"	f	class:CBitMap
+init_epoll_4_mq	tfc_cache_proc.cpp	/^int CacheProc::init_epoll_4_mq() {$/;"	f	class:CacheProc
+init_lastdumptime	tfc_cache_access.cpp	/^void CacheAccess::init_lastdumptime()$/;"	f	class:CacheAccess
+init_lastdumptime	tfc_diskcache_access.cpp	/^void CacheAccess::init_lastdumptime()$/;"	f	class:CacheAccess
+init_node	tfc_cache_hash_map.h	/^inline void CHashMap::init_node(THashNode* node)$/;"	f	class:tfc::cache::CHashMap
+init_node	tfc_diskcache_hash_map.h	/^inline void CHashMap::init_node(THashNode* node)$/;"	f	class:tfc::diskcache::CHashMap
+init_pool	tfc_cache_bit_map.cpp	/^void CBitMap::init_pool()$/;"	f	class:CBitMap
+init_pool_data	tfc_cache_chunk_alloc.cpp	/^void CChunkAllocator::init_pool_data(int n_chunks, int chunk_size)$/;"	f	class:CChunkAllocator
+init_pool_data	tfc_cache_hash_map.cpp	/^void CHashMap::init_pool_data(int node_total, int bucket_size)$/;"	f	class:CHashMap
+init_pool_data	tfc_diskcache_chunk_alloc.cpp	/^void CDiskChunkAllocator::init_pool_data(int n_chunks, unsigned long long chunk_size)$/;"	f	class:CDiskChunkAllocator
+init_pool_data	tfc_diskcache_hash_map.cpp	/^void CHashMap::init_pool_data(int node_total, int bucket_size)$/;"	f	class:CHashMap
+insert_add_list_head	tfc_cache_hash_map.cpp	/^void CHashMap::insert_add_list_head(THashNode* node)$/;"	f	class:CHashMap
+insert_add_list_head	tfc_diskcache_hash_map.cpp	/^void CHashMap::insert_add_list_head(THashNode* node)$/;"	f	class:CHashMap
+insert_add_list_tail	tfc_cache_hash_map.cpp	/^void CHashMap::insert_add_list_tail(THashNode* node)$/;"	f	class:CHashMap
+insert_add_list_tail	tfc_diskcache_hash_map.cpp	/^void CHashMap::insert_add_list_tail(THashNode* node)$/;"	f	class:CHashMap
+insert_node	tfc_cache_hash_map.cpp	/^THashNode* CHashMap::insert_node(TMBHashKey &key, void* new_data, int new_len)$/;"	f	class:CHashMap
+insert_node	tfc_diskcache_hash_map.cpp	/^THashNode* CHashMap::insert_node(TMBHashKey &key, void* new_data, int new_len)$/;"	f	class:CHashMap
+insert_node_list	tfc_cache_hash_map.cpp	/^void CHashMap::insert_node_list(THashNode* node)$/;"	f	class:CHashMap
+insert_node_list	tfc_diskcache_hash_map.cpp	/^void CHashMap::insert_node_list(THashNode* node)$/;"	f	class:CHashMap
+insert_node_metadata	tfc_cache_hash_map.cpp	/^THashNode* CHashMap::insert_node_metadata(TMBHashKey &key, void* new_data, int new_len, int expiretime)$/;"	f	class:CHashMap
+insert_node_metadata	tfc_diskcache_hash_map.cpp	/^THashNode* CHashMap::insert_node_metadata(TMBHashKey &key, int new_len, int expiretime)$/;"	f	class:CHashMap
+is_bit_set	tfc_cache_bit_map.h	/^inline bool CBitMap::is_bit_set(unsigned long long pos)$/;"	f	class:tfc::cache::CBitMap
+is_need_dump	tfc_cache_access.cpp	/^bool CacheAccess::is_need_dump()$/;"	f	class:CacheAccess
+is_need_dump	tfc_diskcache_access.cpp	/^bool CacheAccess::is_need_dump()$/;"	f	class:CacheAccess
+is_new_init	tfc_cache_access.h	/^		bool is_new_init(){ return _cacheinit; };$/;"	f	class:tfc::cache::CacheAccess
+is_new_init	tfc_cache_access.h	/^		bool is_new_init(){ return _da.is_new_init(); };$/;"	f	class:tfc::cache::CacheAccessUin
+is_new_init	tfc_diskcache_access.h	/^		bool is_new_init(){ return _cacheinit; };$/;"	f	class:tfc::diskcache::CacheAccess
+key_	tfc_cache_hash_map.h	/^		TMBHashKey key_;					   \/\/索引$/;"	m	struct:tfc::cache::tagTHashNode
+key_	tfc_diskcache_hash_map.h	/^		TMBHashKey key_;					   \/\/索引$/;"	m	struct:tfc::diskcache::tagTHashNode
+load_dump	tfc_cache_bit_map.cpp	/^int CBitMap::load_dump(std::string dump_file)$/;"	f	class:CBitMap
+main	tfc_cache_mcd_main.cpp	/^int main(int argc, char* argv[]) {$/;"	f
+malloc	tfc_cache_chunk_alloc.cpp	/^BC_MEM_HANDLER CChunkAllocator::malloc (int chunk_num)$/;"	f	class:CChunkAllocator
+malloc	tfc_diskcache_chunk_alloc.cpp	/^BC_DISK_HANDLER CDiskChunkAllocator::malloc (int chunk_num)$/;"	f	class:CDiskChunkAllocator
+mark_clean	tfc_cache_access.cpp	/^int CacheAccess::mark_clean(const char* key)$/;"	f	class:CacheAccess
+mark_clean	tfc_cache_access.cpp	/^int CacheAccess::mark_clean(int modbase, int mobres)$/;"	f	class:CacheAccess
+mark_clean	tfc_cache_access.cpp	/^int CacheAccessUin::mark_clean(int modbase, int mobres)$/;"	f	class:CacheAccessUin
+mark_clean	tfc_cache_access.cpp	/^int CacheAccessUin::mark_clean(unsigned uin)$/;"	f	class:CacheAccessUin
+mark_clean	tfc_diskcache_access.cpp	/^int CacheAccess::mark_clean(const char* key)$/;"	f	class:CacheAccess
+mark_clean	tfc_diskcache_access.cpp	/^int CacheAccess::mark_clean(int modbase, int mobres)$/;"	f	class:CacheAccess
+mark_clean	tfc_diskcache_access.cpp	/^int CacheAccessUin::mark_clean(int modbase, int mobres)$/;"	f	class:CacheAccessUin
+mark_clean	tfc_diskcache_access.cpp	/^int CacheAccessUin::mark_clean(unsigned uin)$/;"	f	class:CacheAccessUin
+md5_	tfc_cache_hash_map.h	/^			char md5_[C_DATA_LEN];$/;"	m	union:tfc::cache::tagTMBHashKey::un_key
+md5_	tfc_diskcache_hash_map.h	/^			char md5_[C_DATA_LEN];$/;"	m	union:tfc::diskcache::tagTMBHashKey::un_key
+merge	tfc_cache_chunk_alloc.cpp	/^int CChunkAllocator::merge(BC_MEM_HANDLER chunk_node_hdr, int chunk_len,$/;"	f	class:CChunkAllocator
+merge	tfc_diskcache_chunk_alloc.cpp	/^int CDiskChunkAllocator::merge(BC_DISK_HANDLER chunk_node_hdr, int chunk_len,$/;"	f	class:CDiskChunkAllocator
+merge_node_data	tfc_cache_hash_map.h	/^inline int CHashMap::merge_node_data(THashNode* node, char* data, int* data_len)$/;"	f	class:tfc::cache::CHashMap
+merge_node_data	tfc_diskcache_hash_map.h	/^inline int CHashMap::merge_node_data(THashNode* node, char* data, int* data_len)$/;"	f	class:tfc::diskcache::CHashMap
+mirror_dump	tfc_cache_access.cpp	/^int CacheAccess::mirror_dump(char *mirror_file)$/;"	f	class:CacheAccess
+mirror_dump	tfc_cache_access.cpp	/^int CacheAccessUin::mirror_dump(char *szcorefile)$/;"	f	class:CacheAccessUin
+mirror_dump	tfc_diskcache_access.cpp	/^int CacheAccess::mirror_dump(char *mirror_file)$/;"	f	class:CacheAccess
+mirror_recover	tfc_cache_access.cpp	/^int CacheAccess::mirror_recover(char *mirror_file)$/;"	f	class:CacheAccess
+mirror_recover	tfc_cache_access.cpp	/^int CacheAccessUin::mirror_recover(char *szcorefile)$/;"	f	class:CacheAccessUin
+mirror_recover	tfc_diskcache_access.cpp	/^int CacheAccess::mirror_recover(char *mirror_file)$/;"	f	class:CacheAccess
+mq_ccd_2_mcd	http_app.cpp	/^	CFifoSyncMQ* mq_ccd_2_mcd;$/;"	m	class:CHttpApp	file:
+mq_ccd_2_mcd	http_app_fwd.cpp	/^	CFifoSyncMQ* mq_ccd_2_mcd;$/;"	m	class:CHttpApp	file:
+mq_dcc_2_mcd	http_app_fwd.cpp	/^	CFifoSyncMQ* mq_dcc_2_mcd;$/;"	m	class:CHttpApp	file:
+mq_mcd_2_ccd	http_app.cpp	/^	CFifoSyncMQ* mq_mcd_2_ccd;$/;"	m	class:CHttpApp	file:
+mq_mcd_2_ccd	http_app_fwd.cpp	/^	CFifoSyncMQ* mq_mcd_2_ccd;$/;"	m	class:CHttpApp	file:
+mq_mcd_2_dcc	http_app_fwd.cpp	/^	CFifoSyncMQ* mq_mcd_2_dcc;$/;"	m	class:CHttpApp	file:
+next_	tfc_cache_chunk_alloc.h	/^		BC_MEM_HANDLER next_;     \/\/CHUNK分片后指针$/;"	m	struct:tfc::cache::tagTChunkNode
+next_	tfc_diskcache_chunk_alloc.h	/^		BC_DISK_HANDLER next_;			\/\/CHUNK分片后指针$/;"	m	struct:tfc::diskcache::tagTDiskChunkNode
+node_next_	tfc_cache_hash_map.h	/^		BC_MEM_HANDLER node_next_;	\/\/节点链表后指针$/;"	m	struct:tfc::cache::tagTHashNode
+node_next_	tfc_diskcache_hash_map.h	/^		BC_DISK_HANDLER node_next_;	\/\/节点链表后指针$/;"	m	struct:tfc::diskcache::tagTHashNode
+node_prev_	tfc_cache_hash_map.h	/^		BC_MEM_HANDLER node_prev_;	\/\/节点链表前指针$/;"	m	struct:tfc::cache::tagTHashNode
+node_prev_	tfc_diskcache_hash_map.h	/^		BC_DISK_HANDLER node_prev_;	\/\/节点链表前指针$/;"	m	struct:tfc::diskcache::tagTHashNode
+node_total_	tfc_cache_hash_map.h	/^		int node_total_;				\/\/节点总数$/;"	m	struct:tfc::cache::tagTHashMap
+node_total_	tfc_diskcache_hash_map.h	/^		int node_total_;				\/\/节点总数$/;"	m	struct:tfc::diskcache::tagTHashMap
+offset_	tfc_diskcache_chunk_alloc.h	/^		unsigned long long offset_;     \/\/数据区在文件中的偏移$/;"	m	struct:tfc::diskcache::tagTDiskChunkNode
+oldest	tfc_cache_access.cpp	/^int CacheAccess::oldest(char* buf, unsigned buf_size$/;"	f	class:CacheAccess
+oldest	tfc_cache_access.cpp	/^int CacheAccessUin::oldest(char* buf, unsigned buf_size$/;"	f	class:CacheAccessUin
+oldest	tfc_diskcache_access.cpp	/^int CacheAccess::oldest(char* buf, unsigned buf_size$/;"	f	class:CacheAccess
+oldest	tfc_diskcache_access.cpp	/^int CacheAccessUin::oldest(char* buf, unsigned buf_size$/;"	f	class:CacheAccessUin
+oldest_key	tfc_cache_access.cpp	/^int CacheAccess::oldest_key(char* key, unsigned& data_len$/;"	f	class:CacheAccess
+oldest_key	tfc_cache_access.cpp	/^int CacheAccessUin::oldest_key(unsigned& uin, unsigned& data_len$/;"	f	class:CacheAccessUin
+oldest_key	tfc_diskcache_access.cpp	/^int CacheAccess::oldest_key(char* key, unsigned& data_len$/;"	f	class:CacheAccess
+oldest_key	tfc_diskcache_access.cpp	/^int CacheAccess::oldest_key(char* key, unsigned& data_len, bool& dirty_flag, int& time_stamp, int& expiretime)$/;"	f	class:CacheAccess
+oldest_key	tfc_diskcache_access.cpp	/^int CacheAccessUin::oldest_key(unsigned& uin, unsigned& data_len$/;"	f	class:CacheAccessUin
+op_del	tfc_cache_access.h	/^			op_del$/;"	e	enum:tfc::cache::CacheAccess::<anonymous>
+op_del	tfc_diskcache_access.h	/^			op_del$/;"	e	enum:tfc::diskcache::CacheAccess::<anonymous>
+op_mark_clean	tfc_cache_access.h	/^			op_mark_clean,$/;"	e	enum:tfc::cache::CacheAccess::<anonymous>
+op_mark_clean	tfc_diskcache_access.h	/^			op_mark_clean,$/;"	e	enum:tfc::diskcache::CacheAccess::<anonymous>
+op_set	tfc_cache_access.h	/^			op_set = 0,$/;"	e	enum:tfc::cache::CacheAccess::<anonymous>
+op_set	tfc_diskcache_access.h	/^			op_set = 0,$/;"	e	enum:tfc::diskcache::CacheAccess::<anonymous>
+open	tfc_cache_access.cpp	/^int CacheAccess::open(char* mem, unsigned mem_size, bool inited$/;"	f	class:CacheAccess
+open	tfc_cache_bit_map.cpp	/^int CBitMap::open(char* pool, bool init, unsigned pool_size)$/;"	f	class:CBitMap
+open	tfc_cache_chunk_alloc.cpp	/^int CChunkAllocator::open(char *pool, bool init, int n_chunks, int chunk_size)$/;"	f	class:CChunkAllocator
+open	tfc_cache_hash_map.cpp	/^int CHashMap::open(char* pool, bool init, int node_total, int bucket_size, int n_chunks, int chunk_size)$/;"	f	class:CHashMap
+open	tfc_diskcache_access.cpp	/^int CacheAccess::open(char* mem, unsigned mem_size, const std::string& cache_file, bool inited$/;"	f	class:CacheAccess
+open	tfc_diskcache_chunk_alloc.cpp	/^int CDiskChunkAllocator::open(char *pool, const std::string& file_path, bool init, int n_chunks, int chunk_size)$/;"	f	class:CDiskChunkAllocator
+open	tfc_diskcache_hash_map.cpp	/^int CHashMap::open(char* pool, const std::string& file_path, bool init, int node_total, int bucket_size, int n_chunks, int chunk_size)$/;"	f	class:CHashMap
+operator !=	tfc_cache_access.h	/^		bool operator !=(const dirty_iterator& right)$/;"	f	class:tfc::cache::CacheAccess::dirty_iterator
+operator !=	tfc_diskcache_access.h	/^		bool operator !=(const dirty_iterator& right)$/;"	f	class:tfc::diskcache::CacheAccess::dirty_iterator
+operator ++	tfc_cache_access.h	/^		dirty_iterator& operator ++(int)$/;"	f	class:tfc::cache::CacheAccess::dirty_iterator
+operator ++	tfc_diskcache_access.h	/^		dirty_iterator& operator ++(int)$/;"	f	class:tfc::diskcache::CacheAccess::dirty_iterator
+operator =	tfc_cache_hash_map.h	/^		tagTMBHashKey& operator =(const tagTMBHashKey& right)$/;"	f	struct:tfc::cache::tagTMBHashKey
+operator =	tfc_diskcache_hash_map.h	/^		tagTMBHashKey& operator =(const tagTMBHashKey& right)$/;"	f	struct:tfc::diskcache::tagTMBHashKey
+operator ==	tfc_cache_access.h	/^		bool operator ==(const dirty_iterator& right)$/;"	f	class:tfc::cache::CacheAccess::dirty_iterator
+operator ==	tfc_cache_hash_map.h	/^	inline bool operator== (const TMBHashKey &lhs, const TMBHashKey &rhs)$/;"	f	namespace:tfc::cache
+operator ==	tfc_diskcache_access.h	/^		bool operator ==(const dirty_iterator& right)$/;"	f	class:tfc::diskcache::CacheAccess::dirty_iterator
+operator ==	tfc_diskcache_hash_map.h	/^	inline bool operator== (const TMBHashKey &lhs, const TMBHashKey &rhs)$/;"	f	namespace:tfc::diskcache
+pool_	tfc_cache_chunk_alloc.h	/^		char *pool_;        \/\/CHUNK 内存块起始地址$/;"	m	class:tfc::cache::CChunkAllocator
+pool_	tfc_cache_hash_map.h	/^		char *pool_;		\/\/内存块起始地址$/;"	m	class:tfc::cache::CHashMap
+pool_	tfc_diskcache_chunk_alloc.h	/^		char *pool_;        \/\/CHUNK 管理内存块起始地址$/;"	m	class:tfc::diskcache::CDiskChunkAllocator
+pool_	tfc_diskcache_hash_map.h	/^		char *pool_;		\/\/内存块起始地址$/;"	m	class:tfc::diskcache::CHashMap
+pool_tail_	tfc_cache_chunk_alloc.h	/^		char *pool_tail_;   \/\/CHUNK 内存块结束地址$/;"	m	class:tfc::cache::CChunkAllocator
+pool_tail_	tfc_cache_hash_map.h	/^		char *pool_tail_;   \/\/内存块结束地址$/;"	m	class:tfc::cache::CHashMap
+pool_tail_	tfc_diskcache_chunk_alloc.h	/^		char *pool_tail_;   \/\/CHUNK 管理内存块结束地址$/;"	m	class:tfc::diskcache::CDiskChunkAllocator
+pool_tail_	tfc_diskcache_hash_map.h	/^		char *pool_tail_;   \/\/内存块结束地址$/;"	m	class:tfc::diskcache::CHashMap
+ptr2handler	tfc_cache_chunk_alloc.cpp	/^inline BC_MEM_HANDLER CChunkAllocator::ptr2handler(TChunkNode* ptr)$/;"	f	class:CChunkAllocator
+ptr2handler	tfc_cache_hash_map.h	/^inline BC_MEM_HANDLER CHashMap::ptr2handler(THashNode* ptr)$/;"	f	class:tfc::cache::CHashMap
+ptr2handler	tfc_diskcache_chunk_alloc.cpp	/^inline BC_DISK_HANDLER CDiskChunkAllocator::ptr2handler(TDiskChunkNode* ptr)$/;"	f	class:CDiskChunkAllocator
+ptr2handler	tfc_diskcache_hash_map.h	/^inline BC_DISK_HANDLER CHashMap::ptr2handler(THashNode* ptr)$/;"	f	class:tfc::diskcache::CHashMap
+replace_node	tfc_cache_hash_map.cpp	/^THashNode* CHashMap::replace_node(TMBHashKey &key, void* new_data, int new_len, char* old_data, int* old_len)$/;"	f	class:CHashMap
+replace_node	tfc_diskcache_hash_map.cpp	/^THashNode* CHashMap::replace_node(TMBHashKey &key, void* new_data, int new_len, char* old_data, int* old_len)$/;"	f	class:CHashMap
+right_rotate_	tfc_cache_hash_map.h	/^		int right_rotate_;$/;"	m	class:tfc::cache::CHashMap
+right_rotate_	tfc_diskcache_hash_map.h	/^		int right_rotate_;$/;"	m	class:tfc::diskcache::CHashMap
+run	http_app.cpp	/^void CHttpApp::run(const std::string& conf_file)$/;"	f	class:CHttpApp
+run	http_app_fwd.cpp	/^void CHttpApp::run(const std::string& conf_file)$/;"	f	class:CHttpApp
+run	test_app.cpp	/^void CTestApp::run(const std::string& conf_file)$/;"	f	class:CTestApp
+run_epoll_4_mq	tfc_cache_proc.cpp	/^int CacheProc::run_epoll_4_mq() {$/;"	f	class:CacheProc
+set	tfc_cache_access.cpp	/^int CacheAccess::set(const char* key, const char* data, unsigned data_len, int expiretime, ENodeFlag flag\/*=NODE_FLAG_DIRTY*\/)$/;"	f	class:CacheAccess
+set	tfc_cache_access.cpp	/^int CacheAccess::set(const char* key, const char* data, unsigned data_len,ENodeFlag flag\/*=NODE_FLAG_DIRTY*\/)$/;"	f	class:CacheAccess
+set	tfc_cache_access.cpp	/^int CacheAccessUin::set(unsigned uin, const char* data, unsigned data_len,ENodeFlag flag\/*=NODE_FLAG_DIRTY*\/)$/;"	f	class:CacheAccessUin
+set	tfc_diskcache_access.cpp	/^int CacheAccess::set(const char* key, const char* data, unsigned data_len, int expiretime, ENodeFlag flag)$/;"	f	class:CacheAccess
+set	tfc_diskcache_access.cpp	/^int CacheAccess::set(const char* key, const char* data, unsigned data_len,ENodeFlag flag\/*=NODE_FLAG_DIRTY*\/)$/;"	f	class:CacheAccess
+set	tfc_diskcache_access.cpp	/^int CacheAccessUin::set(unsigned uin, const char* data, unsigned data_len,ENodeFlag flag\/*=NODE_FLAG_DIRTY*\/)$/;"	f	class:CacheAccessUin
+set_bit	tfc_cache_bit_map.h	/^inline int CBitMap::set_bit(unsigned long long pos)$/;"	f	class:tfc::cache::CBitMap
+set_expiretime	tfc_cache_hash_map.cpp	/^void CHashMap::set_expiretime(THashNode* node, int expiretime)$/;"	f	class:CHashMap
+set_expiretime	tfc_diskcache_hash_map.cpp	/^void CHashMap::set_expiretime(THashNode* node, int expiretime)$/;"	f	class:CHashMap
+set_node_flag	tfc_cache_hash_map.h	/^		void set_node_flag(THashNode * node, ENodeFlag f){assert(node); node->flag_ = (int)f;}$/;"	f	class:tfc::cache::CHashMap
+set_node_flag	tfc_diskcache_hash_map.h	/^		void set_node_flag(THashNode * node, ENodeFlag f){assert(node); node->flag_ = (int)f;}$/;"	f	class:tfc::diskcache::CHashMap
+split	tfc_cache_chunk_alloc.cpp	/^void CChunkAllocator::split(BC_MEM_HANDLER head_hdr, const void* data_buf, int data_len)$/;"	f	class:CChunkAllocator
+split	tfc_diskcache_chunk_alloc.cpp	/^int CDiskChunkAllocator::split(BC_DISK_HANDLER head_hdr, const void* data_buf, int data_len)$/;"	f	class:CDiskChunkAllocator
+szBuff	tfc_cache_access.cpp	/^static char szBuff[MAX_BINLOG_ITEM_LEN];$/;"	v	file:
+szBuff	tfc_diskcache_access.cpp	/^static char szBuff[MAX_BINLOG_ITEM_LEN];$/;"	v	file:
+szTmpBuff	tfc_binlog.hpp	/^	char *szTmpBuff;$/;"	m	class:CBinLog
+tagEBitFlag	tfc_cache_bit_map.h	/^    typedef enum tagEBitFlag$/;"	g	namespace:tfc::cache
+tagENodeFlag	tfc_cache_hash_map.h	/^	typedef enum tagENodeFlag$/;"	g	namespace:tfc::cache
+tagENodeFlag	tfc_diskcache_hash_map.h	/^	typedef enum tagENodeFlag$/;"	g	namespace:tfc::diskcache
+tagTChunk	tfc_cache_chunk_alloc.h	/^	typedef struct tagTChunk$/;"	s	namespace:tfc::cache
+tagTChunkNode	tfc_cache_chunk_alloc.h	/^	typedef struct tagTChunkNode$/;"	s	namespace:tfc::cache
+tagTDiskChunk	tfc_diskcache_chunk_alloc.h	/^	typedef struct tagTDiskChunk$/;"	s	namespace:tfc::diskcache
+tagTDiskChunkNode	tfc_diskcache_chunk_alloc.h	/^	typedef struct tagTDiskChunkNode$/;"	s	namespace:tfc::diskcache
+tagTHashMap	tfc_cache_hash_map.h	/^	typedef struct tagTHashMap$/;"	s	namespace:tfc::cache
+tagTHashMap	tfc_diskcache_hash_map.h	/^	typedef struct tagTHashMap$/;"	s	namespace:tfc::diskcache
+tagTHashNode	tfc_cache_hash_map.h	/^	typedef struct tagTHashNode$/;"	s	namespace:tfc::cache
+tagTHashNode	tfc_diskcache_hash_map.h	/^	typedef struct tagTHashNode$/;"	s	namespace:tfc::diskcache
+tagTMBHashKey	tfc_cache_hash_map.h	/^		tagTMBHashKey(){memset(_.md5_, 0, C_DATA_LEN);}$/;"	f	struct:tfc::cache::tagTMBHashKey
+tagTMBHashKey	tfc_cache_hash_map.h	/^	typedef struct tagTMBHashKey$/;"	s	namespace:tfc::cache
+tagTMBHashKey	tfc_diskcache_hash_map.h	/^		tagTMBHashKey(){memset(_.md5_, 0, C_DATA_LEN);}$/;"	f	struct:tfc::diskcache::tagTMBHashKey
+tagTMBHashKey	tfc_diskcache_hash_map.h	/^	typedef struct tagTMBHashKey$/;"	s	namespace:tfc::diskcache
+tfc	tfc_cache_access.h	/^namespace tfc{namespace cache$/;"	n
+tfc	tfc_cache_bit_map.h	/^namespace tfc{namespace cache$/;"	n
+tfc	tfc_cache_chunk_alloc.h	/^namespace tfc{namespace cache{$/;"	n
+tfc	tfc_cache_hash_map.h	/^namespace tfc{namespace cache$/;"	n
+tfc	tfc_cache_proc.h	/^namespace tfc{namespace cache$/;"	n
+tfc	tfc_diskcache_access.h	/^namespace tfc{namespace diskcache$/;"	n
+tfc	tfc_diskcache_chunk_alloc.h	/^namespace tfc{namespace diskcache{$/;"	n
+tfc	tfc_diskcache_hash_map.h	/^namespace tfc{namespace diskcache$/;"	n
+time_check	tfc_cache_access.cpp	/^int CacheAccess::time_check()$/;"	f	class:CacheAccess
+time_check	tfc_cache_access.cpp	/^int CacheAccessUin::time_check()$/;"	f	class:CacheAccessUin
+time_check	tfc_diskcache_access.cpp	/^int CacheAccess::time_check()$/;"	f	class:CacheAccess
+time_check	tfc_diskcache_access.cpp	/^int CacheAccessUin::time_check()$/;"	f	class:CacheAccessUin
+time_check_mirror	tfc_cache_access.cpp	/^int CacheAccess::time_check_mirror()$/;"	f	class:CacheAccess
+time_check_mirror	tfc_diskcache_access.cpp	/^int CacheAccess::time_check_mirror()$/;"	f	class:CacheAccess
+uin_	tfc_cache_hash_map.h	/^			unsigned uin_;$/;"	m	union:tfc::cache::tagTMBHashKey::un_key
+uin_	tfc_diskcache_hash_map.h	/^			unsigned uin_;$/;"	m	union:tfc::diskcache::tagTMBHashKey::un_key
+un_key	tfc_cache_hash_map.h	/^		union un_key$/;"	u	struct:tfc::cache::tagTMBHashKey
+un_key	tfc_diskcache_hash_map.h	/^		union un_key$/;"	u	struct:tfc::diskcache::tagTMBHashKey
+update_node	tfc_cache_hash_map.cpp	/^THashNode* CHashMap::update_node(THashNode* node, void* new_data, int new_len, $/;"	f	class:CHashMap
+update_node	tfc_diskcache_hash_map.cpp	/^THashNode* CHashMap::update_node(THashNode* node, void* new_data, int new_len, $/;"	f	class:CHashMap
+update_node_metadata	tfc_cache_hash_map.cpp	/^THashNode* CHashMap::update_node_metadata(THashNode* node, void* new_data, int new_len, int expiretime)$/;"	f	class:CHashMap
+update_node_metadata	tfc_diskcache_hash_map.cpp	/^THashNode* CHashMap::update_node_metadata(THashNode* node, int new_len, int expiretime)$/;"	f	class:CHashMap
+use_node	tfc_cache_hash_map.cpp	/^void CHashMap::use_node(THashNode *node, TMBHashKey &key, int chunk_len, $/;"	f	class:CHashMap
+use_node	tfc_diskcache_hash_map.cpp	/^void CHashMap::use_node(THashNode *node, TMBHashKey &key, int chunk_len, $/;"	f	class:CHashMap
+used_bucket_num_	tfc_cache_hash_map.h	/^		int used_bucket_num_;		   \/\/HASH桶使用数$/;"	m	struct:tfc::cache::tagTHashMap
+used_bucket_num_	tfc_diskcache_hash_map.h	/^		int used_bucket_num_;		   \/\/HASH桶使用数$/;"	m	struct:tfc::diskcache::tagTHashMap
+used_node_num	tfc_cache_hash_map.h	/^		int used_node_num() { return hash_map_->used_node_num_; }$/;"	f	class:tfc::cache::CHashMap
+used_node_num	tfc_diskcache_hash_map.h	/^		int used_node_num() { return hash_map_->used_node_num_; }$/;"	f	class:tfc::diskcache::CHashMap
+used_node_num_	tfc_cache_hash_map.h	/^		int used_node_num_;			 \/\/使用的节点数$/;"	m	struct:tfc::cache::tagTHashMap
+used_node_num_	tfc_diskcache_hash_map.h	/^		int used_node_num_;			 \/\/使用的节点数$/;"	m	struct:tfc::diskcache::tagTHashMap
+used_persentage	tfc_cache_bit_map.h	/^inline double CBitMap::used_persentage()$/;"	f	class:tfc::cache::CBitMap
+verify_pool	tfc_cache_bit_map.cpp	/^int CBitMap::verify_pool()$/;"	f	class:CBitMap
+verify_pool_data	tfc_cache_chunk_alloc.cpp	/^int CChunkAllocator::verify_pool_data(int n_chunks, int chunk_size)$/;"	f	class:CChunkAllocator
+verify_pool_data	tfc_cache_hash_map.cpp	/^int CHashMap::verify_pool_data(int node_total, int bucket_size)$/;"	f	class:CHashMap
+verify_pool_data	tfc_diskcache_chunk_alloc.cpp	/^int CDiskChunkAllocator::verify_pool_data(int n_chunks, int chunk_size)$/;"	f	class:CDiskChunkAllocator
+verify_pool_data	tfc_diskcache_hash_map.cpp	/^int CHashMap::verify_pool_data(int node_total, int bucket_size)$/;"	f	class:CHashMap
+version_string	version.cpp	/^char version_string[] = "version   : 2.0.0";$/;"	v
+warning_80persent	tfc_cache_access.cpp	/^bool CacheAccess::warning_80persent()$/;"	f	class:CacheAccess
+warning_80persent	tfc_cache_access.cpp	/^bool CacheAccessUin::warning_80persent()$/;"	f	class:CacheAccessUin
+~CBinLog	tfc_binlog.cpp	/^CBinLog::~CBinLog()$/;"	f	class:CBinLog
+~CBitMap	tfc_cache_bit_map.h	/^        ~CBitMap(){};	$/;"	f	class:tfc::cache::CBitMap
+~CDiskChunkAllocator	tfc_diskcache_chunk_alloc.h	/^		~CDiskChunkAllocator(){ if (data_fd_ != 0) close(data_fd_);	};$/;"	f	class:tfc::diskcache::CDiskChunkAllocator
+~CHashMap	tfc_cache_hash_map.cpp	/^CHashMap::~CHashMap()$/;"	f	class:CHashMap
+~CHashMap	tfc_diskcache_hash_map.cpp	/^CHashMap::~CHashMap()$/;"	f	class:CHashMap
+~CHttpApp	http_app.cpp	/^	virtual ~CHttpApp(){}$/;"	f	class:CHttpApp
+~CHttpApp	http_app_fwd.cpp	/^	virtual ~CHttpApp(){}$/;"	f	class:CHttpApp
+~CTestApp	test_app.cpp	/^	virtual ~CTestApp(){}$/;"	f	class:CTestApp
+~CacheAccess	tfc_cache_access.h	/^		~CacheAccess(){}$/;"	f	class:tfc::cache::CacheAccess
+~CacheAccess	tfc_diskcache_access.h	/^		~CacheAccess(){}$/;"	f	class:tfc::diskcache::CacheAccess
+~CacheAccessUin	tfc_cache_access.h	/^		~CacheAccessUin(){}$/;"	f	class:tfc::cache::CacheAccessUin
+~CacheAccessUin	tfc_diskcache_access.h	/^		~CacheAccessUin(){}$/;"	f	class:tfc::diskcache::CacheAccessUin
+~CacheProc	tfc_cache_proc.h	/^		virtual ~CacheProc(){ close(_epfd);}$/;"	f	class:tfc::cache::CacheProc

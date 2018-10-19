@@ -1,0 +1,128 @@
+******************************************************
+时间：2012-04-09
+版本：ccd2.1.14
+修改内容:
+1.合并TDC分支内容到主干版本。20120409
+
+******************************************************
+时间：2012-04-05
+版本：ccd2.1.13
+修改内容:
+1.优化CCD flow <-> cc 映射为HASH链模式（与DCC相同）。tfc_net_ccd_cconn.h tfc_net_ccd_ccomm.cpp tfc_net_ccd_main.cpp 20120405
+
+******************************************************
+时间：2012-03-14
+版本：ccd2.1.12
+修改内容:
+1.增加enqueue_fail_close配置项，不启用时在CCD enqueue MCD失败时不关闭当前处理连接，否则关闭。tfc_net_ccd_main.cpp 20120314
+
+******************************************************
+时间：2012-02-17
+版本：ccd2.1.11
+修改内容:
+1.细化连接关闭通知。tfc_net_cconn.h tfc_net_cconn.cpp tfc_net_ccd_main.cpp 20120217
+
+******************************************************
+时间：2012-02-10
+版本：ccd2.1.10
+修改内容:
+1.优化了连接池实现，并增加了连接数统计上报。 tfc_net_cconn.h/cpp 20120209
+******************************************************
+时间：2012-01-04
+版本：ccd2.1.9
+修改内容:
+1.优化了共享内存MQ的通知机制，需要编译时加_MQ_OPT宏编译，可以加在incl_head.mk里面 ccd/tfc_net_ipc_mq.h/cpp 20120104
+2.修改了上传限速过程中接收客户端数据后没有调用包完整性检查的缺陷 tfc_net_ccd_main.cpp 20120110
+3.增加日志到/var/log/message，前缀为MCP++ CCD: 可能通过_OUTPUT_LOG宏控制开关 tfc_net_ccd_main.cpp tfc_net_cconn.cpp 20120112
+4.增加配置项root\output_log，_OUTPUT_LOG被定义且该项配置为非0时输出日志到/var/log/message tfc_net_ccd_main.cpp tfc_net_cconn.cpp 20120113
+5.修改文件描述符限制为1000000 mydaemon.cpp 20120113
+
+******************************************************
+时间：2011-12-19
+版本：ccd2.1.8
+修改内容:
+1.CCD增加根据连接建立时的监听端口选择特定包完整性检查函数。tfc_net_ccd_main.cpp tfc_net_cconn.cpp 20111219
+2.AhmAlloc中的对外接口在执行前判断ShmAllco是否被初始化。myalloc.cpp
+
+******************************************************
+时间：2011-12-13
+版本：ccd2.1.7
+修改内容:
+1.CCD加入buffer过载保护功能。tfc_net_ccd_main.cpp tfc_net_cconn.cpp 20111213
+2.CCD初始化失败时返回退出码停止watchdog。tfc_net_ccd_main.cpp 20111213
+3.CCD Recv() handle_socket() handle_rsp_mq()增加对stop标志的判断，避免停止进程时可能的死循环。tfc_net_cconn.cpp tfc_net_ccd_main.cpp 20111214
+4.取消dequeue()接口。tfc_net_ipc_mq.h tfc_net_ipc_mq.cpp 20111214
+
+******************************************************
+时间：2011-11-24
+版本：ccd2.1.6
+修改内容:
+1.优化了下载限速功能，增加了连接发送缓冲区数据长度少于设置阀值时通知mcd的机制 tfc_net_ccd_define.h tfc_net_ccd_main.cpp tfc_net_ccd_cconn.h/cpp 20111124
+2.增加tcp_nodelay选项，减少小包的交互延时 tfc_net_ccd_main.cpp tfc_net_socket_tcp.h/cpp 20111201
+
+******************************************************
+时间：2011-11-16
+版本：ccd2.1.5
+修改内容:
+1.watchdog初始化相关修改，CCD不再上报baseinfo。 2011-11-09
+
+******************************************************
+时间：2011-11-08
+版本：ccd2.1.4
+修改内容:
+1.优化了makefile和编译参数 2011-11-09
+2.修改了shmalloc部分的配置，独立出一个模块，详细见文档描述 tfc_net_ccd_main.cpp tfc_net_open_shmalloc.h/cpp 2011-11-09
+
+******************************************************
+时间：2011-11-04
+版本：ccd2.1.3
+修改内容:
+1.修改过载保护的配置 tfc_net_ccd_main.cpp 2011-11-03
+2.cpu绑定代码调整 tfc_net_ccd_main.cpp mydaemon.h/c 2011-11-03
+3.缓冲内存池fastmem的优化 fastmem.h/c tfc_net_ccd_main.cpp 2011-11-03
+4.增加mcd_pre_route回调接口，使得在连接accept时刻就可以选择不同的mcd tfc_net_ccd_main.cpp tfc_net_cconn.h 2011-11-04
+5.修复mq mapping数组可能潜在的NULL访问bug tfc_net_ccd_main.cpp 2011-11-04
+6.修改了TCCDHeader的定义，增加了毫秒级别的时间戳 tfc_net_ccd_main.cpp tfc_net_ccd_define.h 2011-11-04
+7.其他一些代码小调整 2011-11-04
+
+******************************************************
+时间：2011-10-17
+版本：ccd2.1.2
+修改内容:
+1.统一TDCCHeader长度与TCCDHeader长度一致。tfc_net_dcc_define.h 2011-10-17
+
+******************************************************
+时间：2011-08-17
+版本：ccd2.1.1
+修改内容:
+
+1.记录连接对应的被建立时的listen_port，在事件通知与自定义路由时向业务提供该信息。tfc_net_ccd_main.cpp tfc_net_cconn.h tfc_net_cconn.cpp tfc_net_raw_cache.h version.cpp 2011-09-09
+2.增加listen socket的defer accept特性可配置项defer_accept，增加远程获取ccd实时负载功能可配置项tfc_net_cconn.cpp, fetch_load tfc_net_ccd_main.cpp tfc_net_socket_tcp.h/cpp 2011-09-27
+3.增加配置项bind_cpu，可将CCD绑定到该CPU上。tfc_net_ccd_main.cpp 2011-09-29
+
+******************************************************
+时间：2011-08-17
+版本：ccd2.1.0
+修改内容:
+
+1.flow升级为64位，兼容原32位业务代码。tfc_net_ccd_main.cpp tfc_net_cconn.cpp tfc_net_cconn.h 
+tfc_net_epoll_flow.h tfc_net_ipc_mq.cpp tfc_net_ipc_mq.h tfc_net_raw_cache.h version.cpp 2011-08-17
+2.修复CCD在连接数配置较低时因连接缓存未被初始化而造成的CORE问题。tfc_net_cconn.cpp 2011-08-30
+
+******************************************************
+时间：2011-03-14
+版本：ccd2.0.0
+修改内容:
+
+1.嵌入托管平台客户端代码。tfc_net_ccd_main.cpp, tfc_net_cconn.cpp(Watch函数), makefile. 2011-04-18
+2.修改了rawcache里面当缓冲区的空闲部分占整个缓冲区超过一半的时候进行缓冲区回滚 tfc_net_raw_cache.cpp 2011-04-27
+3.修改了rawcache里面内存分配使用方式，增加了fastmem模块负责缓冲区的内存管理，撤销了第2项修改，此修改同时影响DCC 新增fastmem.h/c 修改了tfc_net_raw_cache.cpp tfc_net_ccd_main.cpp 2011-04-29
+4.修复进程启动忘记捕捉sigpipe信号，由于send调用没加MSG_NOSIGNAL标志，导致进程收到sigpipe信号异常退出且无core文件生成的问题
+mydaemon.c 2011-05-12
+5.优化了fastmem的一些参数和算法 fastmen.c 2011-05-12
+6.修改Recv中可能漏掉FIN包的问题。tfc_net_conn.cpp 2011-06-13
+7.增加CCD->MCD，多MCD自动路由功能。tfc_net_conn.h tfc_net_conn.cpp tfc_net_ccd_main.cpp
+8.ccd增加路由初始化调用函数。tfc_net_main.cpp tfc_net_conn.h 2011-06-27
+
+******************************************************
+checkpoint ccd2.0.0
