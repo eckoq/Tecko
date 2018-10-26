@@ -1,0 +1,56 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+BIN	makefile	/^BIN	:= dcc net_complete.so$/;"	m
+C_TMP_BUF_LEN	dcctestcli.cpp	/^static const unsigned C_TMP_BUF_LEN = (1<<20);$/;"	v	file:
+C_TMP_BUF_LEN	dcctestsvr.cpp	/^static const unsigned C_TMP_BUF_LEN = (1<<20);$/;"	v	file:
+C_TMP_BUF_LEN	tfc_net_dcc_main.cpp	/^static const unsigned C_TMP_BUF_LEN = 128*1024*1024;$/;"	v	file:
+ConnMap	tfc_net_conn_map.cpp	/^ConnMap::ConnMap(int maxconn)$/;"	f	class:ConnMap
+ConnMap	tfc_net_conn_map.hpp	/^class ConnMap$/;"	c
+DCC_HEADER_LEN	tfc_net_conn_map.hpp	35;"	d
+GetExpire	tfc_net_conn_map.cpp	/^int ConnMap::GetExpire(std::vector<unsigned> &vec_key)$/;"	f	class:ConnMap
+OBJ	makefile	/^OBJ	:= ..\/old\/tfc_ipc_sv.o \\$/;"	m
+PrintBin	dcctestcli.cpp	/^void PrintBin(char *pBuffer, int iLength)$/;"	f
+PrintBin	dcctestsvr.cpp	/^void PrintBin(char *pBuffer, int iLength)$/;"	f
+SAY	tfc_net_conn_map.cpp	6;"	d	file:
+SAY	tfc_net_conn_map.cpp	8;"	d	file:
+SAY	tfc_net_dcc_main.cpp	30;"	d	file:
+SAY	tfc_net_dcc_main.cpp	32;"	d	file:
+TDccHeader	tfc_net_conn_map.hpp	/^}TDccHeader;$/;"	t
+_CONN_MAP	tfc_net_conn_map.hpp	2;"	d
+_flow2stconn	tfc_net_conn_map.hpp	/^	std::map<unsigned, stconn> _flow2stconn;$/;"	m	class:ConnMap
+_ip	tfc_net_conn_map.hpp	/^	unsigned int _ip;$/;"	m
+_max_conn	tfc_net_conn_map.hpp	/^	int _max_conn;$/;"	m	class:ConnMap
+_port	tfc_net_conn_map.hpp	/^	unsigned short  _port;$/;"	m
+_reqrsp_type	tfc_net_conn_map.hpp	/^	unsigned short _reqrsp_type;$/;"	m
+add	tfc_net_conn_map.cpp	/^int ConnMap::add(unsigned queue_flow, stconn* pstconn)$/;"	f	class:ConnMap
+connstatus	tfc_net_conn_map.hpp	/^	short connstatus;$/;"	m
+dcc_req_connect	tfc_net_conn_map.hpp	/^	dcc_req_connect = 0,		\/\/仅连接目标$/;"	e	enum:reqrsp_type
+dcc_req_disconnect	tfc_net_conn_map.hpp	/^	dcc_req_disconnect = 1,		\/\/与对方断开连接$/;"	e	enum:reqrsp_type
+dcc_req_send	tfc_net_conn_map.hpp	/^	dcc_req_send = 2,			\/\/发送到对方,自动建立连接,不发送连接建立通知$/;"	e	enum:reqrsp_type
+dcc_rsp_connect_failed	tfc_net_conn_map.hpp	/^	dcc_rsp_connect_failed = 21,\/\/通知连接失败$/;"	e	enum:reqrsp_type
+dcc_rsp_connect_ok	tfc_net_conn_map.hpp	/^	dcc_rsp_connect_ok = 20,	\/\/通知连接成功$/;"	e	enum:reqrsp_type
+dcc_rsp_data	tfc_net_conn_map.hpp	/^	dcc_rsp_data = 23,			\/\/携带响应数据$/;"	e	enum:reqrsp_type
+dcc_rsp_disconnected	tfc_net_conn_map.hpp	/^	dcc_rsp_disconnected = 22,	\/\/通知连接断裂$/;"	e	enum:reqrsp_type
+dcc_rsp_send_failed	tfc_net_conn_map.hpp	/^	dcc_rsp_send_failed=24   	\/\/通知发送失败$/;"	e	enum:reqrsp_type
+delconn	tfc_net_conn_map.cpp	/^int ConnMap::delconn(unsigned queue_flow)$/;"	f	class:ConnMap
+get_conn_frm_flow	tfc_net_conn_map.cpp	/^stconn* ConnMap::get_conn_frm_flow(unsigned queue_flow)$/;"	f	class:ConnMap
+lastavtive	tfc_net_conn_map.hpp	/^	int lastavtive;$/;"	m
+main	dcctestcli.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	dcctestsvr.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	tfc_net_dcc_main.cpp	/^int main(int argc, char* argv[])$/;"	f
+net_complete_func	net_complete.cpp	/^int net_complete_func(const void* data, unsigned data_len)$/;"	f
+protocol_ipc2net	net_complete.cpp	/^int protocol_ipc2net(const void* ipcdata, unsigned ipcdata_len,void* netdata, unsigned &netdata_len)$/;"	f
+protocol_net2ipc	net_complete.cpp	/^int protocol_net2ipc(const void* netdata, unsigned netdata_len,void* ipcdata, unsigned &ipcdata_len)$/;"	f
+reqrsp_type	tfc_net_conn_map.hpp	/^enum reqrsp_type$/;"	g
+status_connected	tfc_net_conn_map.hpp	/^	status_connected = 2,	$/;"	e	enum:status_type
+status_connecting	tfc_net_conn_map.hpp	/^	status_connecting = 0,		\/\/仅连接目标$/;"	e	enum:status_type
+status_send_connecting	tfc_net_conn_map.hpp	/^	status_send_connecting = 1,	\/\/仅连接目标$/;"	e	enum:status_type
+status_type	tfc_net_conn_map.hpp	/^enum status_type$/;"	g
+stconn	tfc_net_conn_map.hpp	/^}stconn;$/;"	t
+ull	tfc_net_conn_map.hpp	/^typedef unsigned long long ull;$/;"	t
+xprintf	tfc_net_conn_map.cpp	/^ void xprintf(const char *szFormat, ...){};$/;"	f
+~ConnMap	tfc_net_conn_map.cpp	/^ConnMap::~ConnMap()$/;"	f	class:ConnMap
