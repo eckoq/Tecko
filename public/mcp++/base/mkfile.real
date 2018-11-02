@@ -1,0 +1,47 @@
+include ../incl_head.mk
+CC =		gcc
+CXX =		g++
+AR =		ar
+CFLAGS +=	-g -Wall -O2 -fPIC -pipe -fno-strict-aliasing -D_GNU_SOURCE -D_REENTRANT -c
+INC =	-I../base -I../ccd -I../mcd -I../dcc -I../old -I../watchdog -I../ -I../common/
+LOBJS = 	../ccd/myalloc.o	\
+			../ccd/tfc_net_ipc_mq.o	\
+			../ccd/tfc_net_socket_tcp.o	\
+			../ccd/tfc_net_socket_udp.o	\
+			../mcd/mydiskalloc.o	\
+			../mcd/tfc_binlog.o	\
+			../mcd/tfc_cache_proc.o	\
+            ../mcd/tfc_cache_hash_map_large.o   \
+            ../mcd/tfc_cache_access_large.o \
+            ../mcd/tfc_cache_chunk_alloc_large.o    \
+			../mcd/tfc_cache_hash_map.o	\
+			../mcd/tfc_cache_access.o	\
+			../mcd/tfc_cache_chunk_alloc.o	\
+			../mcd/tfc_diskcache_hash_map.o	\
+			../mcd/tfc_diskcache_access.o \
+            ../mcd/app_engine.o \
+            ../mcd/app/net_client.o \
+            ../mcd/app/net_server.o \
+            ../mcd/stat_manager.o \
+            ../common/log_client.o \
+            ../ccd/mydaemon.o \
+            ../ccd/version.o \
+            ../ccd/tfc_net_open_mq.o
+
+LIBMCPXX =	libmcptest.a
+
+all: clean target
+
+target: $(LOBJS) $(LIBMCPXX)
+
+%.o: %.cpp
+	$(CXX) $(CFLAGS) $(INC) -o $@ $<
+
+%.o: %.c
+	$(CC) $(CFLAGS) $(INC) -o $@ $<
+
+$(LIBMCPXX): $(LOBJS)
+	$(AR) -r $@ $^
+
+clean:
+	rm -rf $(LOBJS) $(LIBMCPXX) *.gch
