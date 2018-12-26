@@ -1,6 +1,0 @@
-1.增加了CFastTimerInfo和CFastTimerQueue类
-2.修复CSOFile类在未open的情况下析构时coredump的BUG。tfc_base_so.h 20120209
-3.增加CFastTimerQueueStr类，以string作为KEY。tfc_base_faster_timer_str.h tfc_base_faster_timer_str.cpp 20120215
-4.修正tfc_base_comm.h的is_xdigits接口。tfc_base_comm.h 20120405
-5.修正CFastTimerQueue在加入排序表时的缺陷。tfc_base_fast_timer.cpp 20120411
-
