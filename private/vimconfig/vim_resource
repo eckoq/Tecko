@@ -1,2 +1,9 @@
 vim资源相关记录
 1. vim color: http://www.easycolor.cc/vim/list.html
+2. 安装youcompleteme组件
+  *1）youcomplete安装包下载，https://github.com/Valloric/YouCompleteMe，放在~/.vim/plugin目录中
+  *2）在网络正常的环境下执行git submodule update --init --recursive， 无网络环境可以将上述的环境打包过去
+  *3）执行./install.py --clang-completer或者执行./install.py --all 
+  *4）编辑.vimrc, 新增let g:ycm_global_ycm_extra_conf='~/.vim/plugin/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py'
+  
+  （vim需要支持python的插件，编译的时候添加选项--enable-pythoninterp）
