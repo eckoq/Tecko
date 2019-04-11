@@ -28,3 +28,4 @@ set hlsearch
 set wildmenu
 filetype plugin indent on
 set cino=:0,l1,g0,p0,t0
+"let g:ycm_global_ycm_extra_conf='~/.vim/plugin/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py'
