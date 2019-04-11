@@ -10,4 +10,20 @@ vim资源相关记录
   （vim需要支持python的插件，编译的时候添加选项--enable-pythoninterp）
   
 3. nerdtree安装使用
-  插件下载地址：https://www.vim.org/scripts/script.php?script_id=1658，放到.vim目录中然后解压
+  *1）插件下载地址：https://www.vim.org/scripts/script.php?script_id=1658，放到.vim目录中然后解压
+  *2）常用设置
+  " 关闭NERDTree快捷键
+  map <leader>t :NERDTreeToggle<CR>
+  " 显示行号
+  let NERDTreeShowLineNumbers=1
+  let NERDTreeAutoCenter=1
+  " 是否显示隐藏文件
+  let NERDTreeShowHidden=1
+  " 设置宽度
+  let NERDTreeWinSize=31
+  " 在终端启动vim时，共享NERDTree
+  let g:nerdtree_tabs_open_on_console_startup=1
+  " 忽略一下文件的显示
+  let NERDTreeIgnore=['\.pyc','\~$','\.swp']
+  " 显示书签列表
+  let NERDTreeShowBookmarks=1
