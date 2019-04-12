@@ -1,5 +1,6 @@
 vim资源相关记录
 1. vim color: http://www.easycolor.cc/vim/list.html
+   vim 官网：https://www.vim.org/    资源下载
 
 2. 安装youcompleteme组件
   *1）youcomplete安装包下载，https://github.com/Valloric/YouCompleteMe，放在~/.vim/plugin目录中
