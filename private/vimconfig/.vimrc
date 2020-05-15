@@ -1,4 +1,5 @@
 syntax enable
+colorscheme monokai
 set tags=tags;/
 set encoding=utf-8
 set number
@@ -106,7 +107,7 @@ let g:ycm_show_diagnostics_ui = 0
 "TAGTLIST插件
 """"""""""""""""
 let Tlist_Inc_Winwidth=0
-let Tlist_Use_Right_Window=1
+let Tlist_Use_Right_Window=0
 let Tlist_File_Fold_Auto_Close=1
 let Tlist_Exit_OnlyWindow=1
 """"""""""""""""
@@ -114,8 +115,18 @@ let Tlist_Exit_OnlyWindow=1
 """"""""""""""""
 "MINBUF插件
 """"""""""""""""
+map <F3> :Tlist<CR>
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
+""""""""""""""""
+
+""""""""""""""""
+"NERDTree插件
+""""""""""""""""
+" 按下 F2 调出/隐藏 NERDTree
+map <F2> :NERDTree<CR>
+let g:NERDTreeWinPos ="right"
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&b:NERDTreeType == "primary") | q | endif
 """"""""""""""""
