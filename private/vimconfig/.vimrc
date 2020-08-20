@@ -12,7 +12,11 @@ set cursorline
 
 " 输入设置
 set backspace=2
+
 set tabstop=2
+" makefile tabs
+autocmd FileType make setlocal noexpandtab
+
 set shiftwidth=2
 set smarttab
 set expandtab
