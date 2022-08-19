@@ -28,3 +28,6 @@ vim资源相关记录
   let NERDTreeIgnore=['\.pyc','\~$','\.swp']
   " 显示书签列表
   let NERDTreeShowBookmarks=1
+  
+4. YouCompleteMe
+  scl安装: https://www.softwarecollections.org/en/scls/rhscl/devtoolset-8/
