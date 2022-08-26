@@ -31,4 +31,10 @@ vim资源相关记录
   
 4. YouCompleteMe
   scl安装: https://www.softwarecollections.org/en/scls/rhscl/devtoolset-8/
-https://zhuanlan.zhihu.com/p/430849195
+  https://zhuanlan.zhihu.com/p/430849195
+
+5. gcc-10环境
+   wget http://mirror.ghettoforge.org/distributions/gf/el/7/gf/x86_64/gf-release-7-12.gf.el7.noarch.rpm
+   rpm -Uvh gf-release-7-12.gf.el7.noarch.rpm
+   yum install gcc10-libstdc++
+   rpm -ql gcc10-libstdc++.x86_64
