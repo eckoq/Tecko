@@ -38,3 +38,6 @@ vim资源相关记录
    rpm -Uvh gf-release-7-12.gf.el7.noarch.rpm
    yum install gcc10-libstdc++
    rpm -ql gcc10-libstdc++.x86_64
+ 
+6. glibc
+   https://www.codenong.com/cs107057646/
